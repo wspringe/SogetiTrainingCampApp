@@ -4,18 +4,37 @@
 */
 
 'use strict';
-var React = require('react');
-var ReactNative = require('react-native');
+import React, { Component } from 'react';
+import {
+	AppRegistry,
+	StyleSheet,
+	Text,
+	View,
+	Navigator, 
+	TouchableOpacity,
+} from 'react-native';
 
 import LoginPage from './LoginPage'
+import NextScreen from './NextScreen'
 
-class TrainingCampApp extends React.Component{
+class TrainingCampApp extends Component{
+	_renderScene(route, nav) {
+		switch (route.screen) {
+			case "LoginPage":
+				return <LoginPage navigator={nav} />
+			case "NextScreen":
+				return <NextScreen navigator={nav} />
+		}
+	}
   render() {
     return (
-        <LoginPage />
-    );
+        <Navigator
+        	initialRoute={{screen: 'LoginPage'}}
+        	renderScene={(route, nav) => {return this._renderScene(route, nav)}} 
+        />
+    )
   }
-};
+}
 
 
-ReactNative.AppRegistry.registerComponent('AwesomeProject', () => TrainingCampApp);
+AppRegistry.registerComponent('SogetiTrainingCampApp', () => TrainingCampApp);
