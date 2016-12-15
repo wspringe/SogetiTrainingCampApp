@@ -18,6 +18,7 @@ import LoginPage from './LoginPage'
 import NextScreen from './NextScreen'
 
 class TrainingCampApp extends Component{
+
 	_renderScene(route, nav) {
 		switch (route.screen) {
 			case "LoginPage":
@@ -30,7 +31,12 @@ class TrainingCampApp extends Component{
     return (
         <Navigator
         	initialRoute={{screen: 'LoginPage'}}
-        	renderScene={(route, nav) => {return this._renderScene(route, nav)}} 
+        	renderScene={(route, nav) => {return this._renderScene(route, nav)}}
+        	configureScene={() => ({
+        		...Navigator.SceneConfigs.FloatFromLeft,
+        		gestures: {},
+        	})
+        }
         />
     )
   }
