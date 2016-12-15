@@ -37,4 +37,4 @@ class TrainingCampApp extends Component{
 }
 
 
-AppRegistry.registerComponent('SogetiTrainingCampApp', () => TrainingCampApp);
+AppRegistry.registerComponent('AwesomeProject', () => TrainingCampApp);
