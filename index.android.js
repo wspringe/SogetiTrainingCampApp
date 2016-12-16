@@ -14,14 +14,16 @@ import {
 	TouchableOpacity,
 } from 'react-native';
 
-import LoginPage from './LoginPage'
+//import LoginPage from './LoginPage'
 import NextScreen from './NextScreen'
+import SplashScreen from './SplashScreen'
 
 class TrainingCampApp extends Component{
+
 	_renderScene(route, nav) {
 		switch (route.screen) {
-			case "LoginPage":
-				return <LoginPage navigator={nav} />
+			case "SplashScreen":
+				return <SplashScreen navigator={nav} />
 			case "NextScreen":
 				return <NextScreen navigator={nav} />
 		}
@@ -29,8 +31,13 @@ class TrainingCampApp extends Component{
   render() {
     return (
         <Navigator
-        	initialRoute={{screen: 'LoginPage'}}
-        	renderScene={(route, nav) => {return this._renderScene(route, nav)}} 
+        	initialRoute={{screen: 'SplashScreen'}}
+        	renderScene={(route, nav) => {return this._renderScene(route, nav)}}
+        	configureScene={() => ({
+        		...Navigator.SceneConfigs.FloatFromLeft,
+        		gestures: {},
+        	})
+        }
         />
     )
   }
