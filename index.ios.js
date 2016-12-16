@@ -16,11 +16,14 @@ import {
 
 import LoginPage from './LoginPage'
 import NextScreen from './NextScreen'
+import SplashScreen from './SplashScreen'
 
 class TrainingCampApp extends Component{
 
 	_renderScene(route, nav) {
 		switch (route.screen) {
+			case "SplashScreen":
+				return <SplashScreen navigator={nav} />
 			case "LoginPage":
 				return <LoginPage navigator={nav} />
 			case "NextScreen":
@@ -30,7 +33,7 @@ class TrainingCampApp extends Component{
   render() {
     return (
         <Navigator
-        	initialRoute={{screen: 'LoginPage'}}
+        	initialRoute={{screen: 'SplashScreen'}}
         	renderScene={(route, nav) => {return this._renderScene(route, nav)}}
         	configureScene={() => ({
         		...Navigator.SceneConfigs.FloatFromLeft,

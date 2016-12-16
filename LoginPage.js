@@ -65,8 +65,8 @@ export default class LoginPage extends Component {
                     <Text style={styles.greyFont}>Forgot Password</Text>
                 </View>
             </View>
-            <TouchableHighlight onPress={this._nextPage.bind(this)}>
-                <View style={styles.signin}>
+            <TouchableHighlight onPress={this._nextPage.bind(this) }> 
+                <View style={styles.signin}> 
                     <Text style={styles.whiteFont}>Sign In</Text>
                 </View>
             </TouchableHighlight>
@@ -77,14 +77,6 @@ export default class LoginPage extends Component {
     );
   }
 }
-
-/* 
-LoginPage.propTypes = {
-    username: PropTypes.string.isRequired,
-    password: PropTypes.string.isRequired,
-}; 
-*/
-
 
 var styles = StyleSheet.create({
     container: {
@@ -159,4 +151,3 @@ var styles = StyleSheet.create({
       color: '#FFF'
     }
 })
-//module.exports = LoginPage;
