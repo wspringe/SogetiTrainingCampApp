@@ -18,7 +18,7 @@ export default class NextScreen extends Component {
 
   _goBack() {
   	console.log("We're going back!");
-  	this.props.navigator.push({ screen: 'LoginPage' });
+  	this.props.navigator.push({ screen: 'SplashScreen' });
   }
 
   render() {
@@ -56,7 +56,7 @@ export default class NextScreen extends Component {
         <View style={styles.header}>
             <Text>This is the next screen!</Text>
             <TouchableHighlight onPress={this._goBack.bind(this)}>
-              <Text>Go back to LoginPage</Text>
+              <Text>Go back to SplashScreen</Text>
             </TouchableHighlight>
           </View>
         </View>

@@ -14,7 +14,7 @@ import {
 	TouchableOpacity,
 } from 'react-native';
 
-import LoginPage from './LoginPage'
+//import LoginPage from './LoginPage'
 import NextScreen from './NextScreen'
 import SplashScreen from './SplashScreen'
 
@@ -24,8 +24,6 @@ class TrainingCampApp extends Component{
 		switch (route.screen) {
 			case "SplashScreen":
 				return <SplashScreen navigator={nav} />
-			case "LoginPage":
-				return <LoginPage navigator={nav} />
 			case "NextScreen":
 				return <NextScreen navigator={nav} />
 		}
