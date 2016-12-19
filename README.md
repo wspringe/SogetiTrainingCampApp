@@ -20,3 +20,5 @@ Current required packages:
 1. Signup for a new account and create an email and password.  
 2. Afterwards, login with the email and password that was registered.  
 3. Verify that the login worked and that you entered into the application.  
+
+**This is a test of github flow**
