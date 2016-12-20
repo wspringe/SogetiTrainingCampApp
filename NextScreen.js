@@ -41,6 +41,15 @@ export default class NextScreen extends Component {
           this.setState({drawerOpen: false})
         }}
         captureGestures={false}
+        tweenHandler={ratio => ({
+          main: {
+            opacity: 1,
+          },
+          mainOverlay: {
+            opacity: ratio / 2,
+            backgroundColor: 'black',
+          },
+        })}
         tweenDuration={100}
         panThreshold={0.08}
         disabled={false}
@@ -50,8 +59,8 @@ export default class NextScreen extends Component {
         closedDrawerOffset={() => -3}
         panOpenMask={0.2}
         negotiatePan 
-
         >
+
         <View style={styles.container}>
         <View style={styles.header}>
             <Text>This is the next screen!</Text>

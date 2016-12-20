@@ -21,13 +21,13 @@ export default class ControlPanel extends Component {
           <Text style={styles.headerText}></Text>
           <Text style={styles.headerText}>FirstName LastName</Text>
         </View>
-        <View>
-            <Text>Events</Text>
-            <Text>Surveys</Text>
-            <Text>Activities</Text>
-            <Text>Notifications</Text>
+        <View style={styles.first}>
+            <Text style={styles.menuFont}>Events</Text>
+            <Text style={styles.menuFont}>Surveys</Text>
+            <Text style={styles.menuFont}>Activities</Text>
+            <Text style={styles.menuFont}>Notifications</Text>
           </View>
-          <View>
+          <View style={styles.second}>
             <Text>Event Management</Text>
             <Text>User Management</Text>
             <Text>User Groups</Text>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     paddingTop: 20,
-    backgroundColor: 'transparent',
+    backgroundColor: 'orange',
   },
   header: {
     backgroundColor: 'orange',
@@ -55,5 +55,16 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 20,
     fontWeight: 'bold'
-  }
+  },
+  first: {
+    padding: 20,
+    alignItems: 'center',
+  },
+  second: {
+
+  },
+  menuFont: {
+    color: 'white',
+    fontSize: 20
+  },
 })
