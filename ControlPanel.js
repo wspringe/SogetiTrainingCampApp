@@ -3,14 +3,20 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TouchableHighlight,
   TouchableOpacity,
   View,
+  Image
 } from 'react-native'
 
 export default class ControlPanel extends Component {
   static propTypes = {
     closeDrawer: PropTypes.func.isRequired
   };
+
+  _test() {
+      console.log("Click!");
+  }
 
   render() {
     let {closeDrawer} = this.props
@@ -22,16 +28,80 @@ export default class ControlPanel extends Component {
           <Text style={styles.headerText}>FirstName LastName</Text>
         </View>
         <View style={styles.first}>
-            <Text style={styles.menuFont}>Events</Text>
-            <Text style={styles.menuFont}>Surveys</Text>
-            <Text style={styles.menuFont}>Activities</Text>
-            <Text style={styles.menuFont}>Notifications</Text>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Events
+              </Text>
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Surveys
+              </Text>
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Activities
+              </Text>
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.lastFirstMenuOption}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Notifications
+              </Text>
+            </View>
+          </TouchableHighlight>
           </View>
           <View style={styles.second}>
-            <Text>Event Management</Text>
-            <Text>User Management</Text>
-            <Text>User Groups</Text>
-            <Text>Push Notifications</Text>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Event Management
+              </Text>
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Manage Users
+              </Text>
+            </View>
+          </TouchableHighlight>
+          <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   User Roles
+              </Text>
+            </View>
+          </TouchableHighlight>
+            <TouchableHighlight 
+          onPress={this._test.bind(this)}
+          underlayColor='gray'>
+            <View style={styles.menuOptionContainer}>
+              <Text style={styles.menuText}>
+                <Image style={styles.image} source={require('./Resources/events.png')} />   Push Notifications
+              </Text>
+            </View>
+          </TouchableHighlight>
           </View>
       </ScrollView>
     )
@@ -42,14 +112,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    paddingTop: 20,
-    backgroundColor: 'orange',
+    backgroundColor: 'white',
   },
   header: {
     backgroundColor: 'orange',
     flex: .25,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+     paddingTop: 20,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 10
   },
   headerText: {
     color: 'white',
@@ -57,14 +130,32 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   first: {
-    padding: 20,
-    alignItems: 'center',
+    borderWidth: 1,
+    borderBottomColor: 'gray',
+    backgroundColor: 'white',
+    borderColor: 'transparent'
   },
   second: {
-
+    borderWidth: 1,
+    backgroundColor: 'white',
+    borderColor: 'transparent',
   },
-  menuFont: {
-    color: 'white',
-    fontSize: 20
+  menuText: {
+    color: 'black',
+    fontSize: 20,
+    fontWeight: 'bold',
   },
+  image: {
+    width: 18,
+    height: 18,
+  },
+  menuOptionContainer: {
+    paddingLeft: 10,
+    paddingTop: 5,
+  },
+  lastFirstMenuOption: {
+    paddingLeft: 10,
+    paddingTop: 5,
+    paddingBottom: 10,
+  }
 })

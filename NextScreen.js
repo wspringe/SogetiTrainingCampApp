@@ -31,7 +31,7 @@ export default class NextScreen extends Component {
           <ControlPanel closeDrawer={this.closeDrawer} />
         }
         tapToClose={true}
-        styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15, paddingTop: 20}}}
+        styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15}}}
         onOpen={() => {
           console.log('onopen')
           this.setState({drawerOpen: true})
@@ -47,7 +47,7 @@ export default class NextScreen extends Component {
           },
           mainOverlay: {
             opacity: ratio / 2,
-            backgroundColor: 'black',
+            backgroundColor: 'gray',
           },
         })}
         tweenDuration={100}
