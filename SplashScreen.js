@@ -45,7 +45,12 @@ export default class SplashScreen extends Component{
         console.log(err);
         return;
       }
-      this.props.navigator.push({screen: 'NextScreen'});
+      this.props.navigator.push({screen: 'NextScreen',
+      passProps: {
+        profile: profile,
+        token: token,
+      }
+    });
     });
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
+import { View, Text, TouchableHighlight, StyleSheet, Navigator } from 'react-native';
 import Drawer from 'react-native-drawer'
 import ControlPanel from './ControlPanel'
 
@@ -28,10 +28,10 @@ export default class NextScreen extends Component {
         type="overlay"
         //This is where menu goes on sidebar
         content={
-          <ControlPanel closeDrawer={this.closeDrawer} />
+          <ControlPanel closeDrawer={this.closeDrawer} name={this.props.profile.name} avatar={this.props.profile.picture}/>
         }
         tapToClose={true}
-        styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15, paddingTop: 20}}}
+        styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15}}}
         onOpen={() => {
           console.log('onopen')
           this.setState({drawerOpen: true})
@@ -41,6 +41,15 @@ export default class NextScreen extends Component {
           this.setState({drawerOpen: false})
         }}
         captureGestures={false}
+        tweenHandler={ratio => ({
+          main: {
+            opacity: 1,
+          },
+          mainOverlay: {
+            opacity: ratio / 2,
+            backgroundColor: 'gray',
+          },
+        })}
         tweenDuration={100}
         panThreshold={0.08}
         disabled={false}
@@ -50,14 +59,15 @@ export default class NextScreen extends Component {
         closedDrawerOffset={() => -3}
         panOpenMask={0.2}
         negotiatePan 
-
         >
+
         <View style={styles.container}>
         <View style={styles.header}>
             <Text>This is the next screen!</Text>
             <TouchableHighlight onPress={this._goBack.bind(this)}>
               <Text>Go back to SplashScreen</Text>
             </TouchableHighlight>
+            <Text>Hello, {this.props.profile.name}</Text>
           </View>
         </View>
       </Drawer>
