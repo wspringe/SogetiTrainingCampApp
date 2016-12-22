@@ -24,8 +24,8 @@ export default class ControlPanel extends Component {
       <ScrollView style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.headerText}>Hello,</Text>
-          <Text style={styles.headerText}></Text>
-          <Text style={styles.headerText}>FirstName LastName</Text>
+          <Image source={{uri: this.props.avatar}} />
+          <Text style={styles.headerText}>{this.props.name}</Text>
         </View>
         <View style={styles.first}>
           <TouchableHighlight 
@@ -37,6 +37,7 @@ export default class ControlPanel extends Component {
               </Text>
             </View>
           </TouchableHighlight>
+
           <TouchableHighlight 
           onPress={this._test.bind(this)}
           underlayColor='gray'>
@@ -46,6 +47,7 @@ export default class ControlPanel extends Component {
               </Text>
             </View>
           </TouchableHighlight>
+
           <TouchableHighlight 
           onPress={this._test.bind(this)}
           underlayColor='gray'>
@@ -55,6 +57,7 @@ export default class ControlPanel extends Component {
               </Text>
             </View>
           </TouchableHighlight>
+
           <TouchableHighlight 
           onPress={this._test.bind(this)}
           underlayColor='gray'>
@@ -65,6 +68,7 @@ export default class ControlPanel extends Component {
             </View>
           </TouchableHighlight>
           </View>
+          
           <View style={styles.second}>
           <TouchableHighlight 
           onPress={this._test.bind(this)}
@@ -75,6 +79,7 @@ export default class ControlPanel extends Component {
               </Text>
             </View>
           </TouchableHighlight>
+
           <TouchableHighlight 
           onPress={this._test.bind(this)}
           underlayColor='gray'>
@@ -84,6 +89,7 @@ export default class ControlPanel extends Component {
               </Text>
             </View>
           </TouchableHighlight>
+
           <TouchableHighlight 
           onPress={this._test.bind(this)}
           underlayColor='gray'>
@@ -93,7 +99,8 @@ export default class ControlPanel extends Component {
               </Text>
             </View>
           </TouchableHighlight>
-            <TouchableHighlight 
+
+          <TouchableHighlight 
           onPress={this._test.bind(this)}
           underlayColor='gray'>
             <View style={styles.menuOptionContainer}>

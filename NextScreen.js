@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
+import { View, Text, TouchableHighlight, StyleSheet, Navigator } from 'react-native';
 import Drawer from 'react-native-drawer'
 import ControlPanel from './ControlPanel'
 
@@ -28,7 +28,7 @@ export default class NextScreen extends Component {
         type="overlay"
         //This is where menu goes on sidebar
         content={
-          <ControlPanel closeDrawer={this.closeDrawer} />
+          <ControlPanel closeDrawer={this.closeDrawer} name={this.props.profile.name} avatar={this.props.profile.picture}/>
         }
         tapToClose={true}
         styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15}}}
@@ -67,6 +67,7 @@ export default class NextScreen extends Component {
             <TouchableHighlight onPress={this._goBack.bind(this)}>
               <Text>Go back to SplashScreen</Text>
             </TouchableHighlight>
+            <Text>Hello, {this.props.profile.name}</Text>
           </View>
         </View>
       </Drawer>

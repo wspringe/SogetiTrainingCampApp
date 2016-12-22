@@ -23,9 +23,9 @@ class TrainingCampApp extends Component{
 	_renderScene(route, nav) {
 		switch (route.screen) {
 			case "SplashScreen":
-				return <SplashScreen navigator={nav} />
+				return <SplashScreen navigator={nav} {...route.passProps} />
 			case "NextScreen":
-				return <NextScreen navigator={nav} />
+				return <NextScreen navigator={nav} {...route.passProps} />
 		}
 	}
   render() {
