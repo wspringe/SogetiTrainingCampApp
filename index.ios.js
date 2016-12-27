@@ -1,8 +1,3 @@
-/*
-  Based on https://github.com/browniefed/react-native-screens
-  With following the guide from https://www.raywenderlich.com/126063/react-native-tutorial
-*/
-
 'use strict';
 import React, { Component } from 'react';
 import {
@@ -15,17 +10,18 @@ import {
 } from 'react-native';
 
 //import LoginPage from './LoginPage'
-import NextScreen from './NextScreen'
+import MainMenu from './MainMenu'
 import SplashScreen from './SplashScreen'
 
 class TrainingCampApp extends Component{
 
 	_renderScene(route, nav) {
 		switch (route.screen) {
+			//Note: have to use {...route.passProps} for passProps in SplashScreen to work properly
 			case "SplashScreen":
 				return <SplashScreen navigator={nav} {...route.passProps} />
-			case "NextScreen":
-				return <NextScreen navigator={nav} {...route.passProps} />
+			case "MainMenu":
+				return <MainMenu navigator={nav} {...route.passProps} />
 		}
 	}
   render() {
@@ -44,4 +40,4 @@ class TrainingCampApp extends Component{
 }
 
 
-AppRegistry.registerComponent('AwesomeProject', () => TrainingCampApp);
+AppRegistry.registerComponent('SogetiTrainingCamp', () => TrainingCampApp);
