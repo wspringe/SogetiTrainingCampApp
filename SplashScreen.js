@@ -38,6 +38,7 @@ export default class SplashScreen extends Component{
   }
 
   _onLogin() {
+    //this is from the tutorial @ https://github.com/root-two/react-native-drawer
     lock.show({
       closable: true,
     }, (err, profile, token) => {
@@ -45,7 +46,8 @@ export default class SplashScreen extends Component{
         console.log(err);
         return;
       }
-      this.props.navigator.push({screen: 'NextScreen',
+      this.props.navigator.push({screen: 'MainMenu',
+      //passes props from auth0 user info to next screen
       passProps: {
         profile: profile,
         token: token,
