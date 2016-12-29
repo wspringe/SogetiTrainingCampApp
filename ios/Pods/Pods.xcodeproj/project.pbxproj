@@ -41,7 +41,6 @@
 		155B238AC463DDA9B4387DBF6F2A022E /* SimpleKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 828A63F5FDCDDEE212D86D563EA76BC6 /* SimpleKeychain-dummy.m */; };
 		157B1045163D85E92BBE3F33B11142B1 /* A0DatabaseLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A9463DFF18CFCE233106AFFB1C71BD57 /* A0DatabaseLoginViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		17C59A4E19B9626FCC7A528102C49456 /* baidu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0BCF29B1ABF4CA8DD2F6E1EDE3B2B4 /* baidu@3x.png */; };
-		186696BD26ABAC2B63B37B584A03D1C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CB27039FB0EE3B8ED51CC4EEE21F /* Foundation.framework */; };
 		18AFF4EA8ABFC4AADD302B3648A58B72 /* A0Application.m in Sources */ = {isa = PBXBuildFile; fileRef = BE975DC81C8CF010292B4B5FB28F6ADC /* A0Application.m */; };
 		18F6B6E7A4EAF1932EC3BD71DAB5D1D8 /* paypal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A46CCE46ACDD3F54FE0AA91B92D8B1A /* paypal@2x.png */; };
 		1A1D88B780C65DB438A6A69D985E18C2 /* github@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23484340B9E7B6824F825ADFABCFD287 /* github@3x.png */; };
@@ -88,7 +87,6 @@
 		3446BD3D8E626F3FF36C36D2B282B678 /* A0Lock+A0TouchIDLockViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B508DBD346235801E86F46C53FA1BEBC /* A0Lock+A0TouchIDLockViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		354F904900B76DB308FBB4CDDC43EEF4 /* A0FullActiveDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0134AE85DF4EBAF950ECA690D4C7CD /* A0FullActiveDirectoryViewController.m */; };
 		36415BAB7F1424D5DFABE9779B9239EB /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 190A4420C625282856C000C8FFB198D4 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36DFB2A12786C14CAAE6D142DEEEC261 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CB27039FB0EE3B8ED51CC4EEE21F /* Foundation.framework */; };
 		37A814A0208A17FFE6A991BFBE8F24C0 /* planningcenter.png in Resources */ = {isa = PBXBuildFile; fileRef = D852708AD2CFAA0DE6BC65E3C9CBA391 /* planningcenter.png */; };
 		38265D14A98773D82BDF1F4D8F6801E7 /* soundcloud@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7DD2204FF626BA2817E3916CF336A7 /* soundcloud@3x.png */; };
 		391C3C7FB291AEFBCCFC295FCE5E4221 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DCEF0663AA905A3AF984C67C2D55B5 /* people.png */; };
@@ -108,7 +106,6 @@
 		44A332631E32A054889269C9BC6D7B94 /* touchid_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EED4E3A6A9F1854FB8470CEAF2C4EC0 /* touchid_selected@3x.png */; };
 		44A8A46AF023BEDE0A161601E4256A8C /* A0SMSLockViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEAB2A0342EB1A3707E458BF2FF7A20 /* A0SMSLockViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450DD6EC5615363D01719D9C5D214D49 /* A0EnterpriseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A50F633D0CF19236ADAB5E60F243F5 /* A0EnterpriseLoginViewController.m */; };
-		45873A7039B8C6D99C2533302EB2C153 /* Pods-AwesomeProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED22F68A9DEE18001AD04D30F25302F /* Pods-AwesomeProjectTests-dummy.m */; };
 		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5B9DBC2ED88E08F7D1DDDABBE42CB0 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47890992A90BC4D1520CD63A86360411 /* A0SMSSendCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E700140873C4CCD0F6C4DE2F2269F70 /* A0SMSSendCodeViewController.m */; };
 		47D967AFCEBF57CBEA5FF8028166EE5A /* yandex.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F7DEA0A909DB9D232024D23A77CEB /* yandex.png */; };
@@ -229,6 +226,7 @@
 		826323213EF27538B9ADF40E55EB0519 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4131A2CDFBF3F992A749544B2AB6A6EA /* twitter@2x.png */; };
 		8333D7006BDBDB118D7F174B52BECDA3 /* thecity@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB5888A2D6965FBF87F2AC73A193A19 /* thecity@3x.png */; };
 		84531DB7A949DDB3C9E31AF5FB20C5B0 /* weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0BEDDB8F4CB5A3FC0B2C61D68B2F6 /* weibo@3x.png */; };
+		8508084EED4085E340AA3E42E5A55BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CB27039FB0EE3B8ED51CC4EEE21F /* Foundation.framework */; };
 		8534CB9DCFB2F8F7A9347168E803CE80 /* A0APIRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B34587CDEC81A6DB2D8F3F270BC9C87 /* A0APIRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		853C24C274BBB0A160AD31E2B9299B64 /* UIConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3D2FC2B03EB5C754877FC9BE7556C5 /* UIConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E72B31F6A88DD0B69D130C7205B441 /* AFURLResponseSerialization.m */; };
@@ -258,13 +256,13 @@
 		9480623F33A1F7CF29BD4CE7A050B86E /* microsoft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B17923E4CC059228002EF8790FD2F7 /* microsoft@2x.png */; };
 		94B4C9FE549E74B054A33DA16F9CA423 /* A0AuthParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8CE2F831B9408A13B12E1CC5207388 /* A0AuthParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		952E45D502F77EDC78A9F1D1BB25A908 /* paypal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7D30D93E001C7E33608995761E2E1 /* paypal.png */; };
-		956CE2F0F1953834CD524B07EDEEBFB2 /* Pods-AwesomeProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7264FF68F7ACD727C000ADA1020F1584 /* Pods-AwesomeProject-dummy.m */; };
 		95DDAA6C03D4297739FAE36D7004CAEF /* NSError+A0LockErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = D9373D9B312E91AD597906489DBED360 /* NSError+A0LockErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		965F8B4A68A9BFD2C56A2A6D6CD32E15 /* A0Connection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA663C58309D1F7BCA18617EDD8E03E /* A0Connection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96D556FFEEFEF383FA82453E82769693 /* A0UserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 81FE6C23E61B697DB9C6D49C3D3332FF /* A0UserProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96E7D36C179D1B338726040BEE858D34 /* wordpress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E661DBF9D6760593F13F54E80C74E91 /* wordpress@2x.png */; };
 		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ADE9035E383B843405C976413A1F42 /* AFNetworking-dummy.m */; };
 		98C8E6A05AD16C758085CE1F4CE87CED /* A0WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA634618BED68FC7A6552A20AC14D203 /* A0WebViewController.m */; };
+		98CCBAF3EC52043884098B07902F63D4 /* Pods-SogetiTrainingCamp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C7285CAE5659F3B6C81CC5B412DB30 /* Pods-SogetiTrainingCamp-dummy.m */; };
 		9901DFE2B75F9C5B185C08C574B01E3C /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 689467E286C9ECE1EB3ABBE2B6674F10 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99AA0EC37FF78985F19074D2DBB86A66 /* A0JWTBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 93003118C99F10365666076021EC1DF7 /* A0JWTBuilder.m */; };
 		99C885A0FEACC5886269CB1258C73B88 /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DDA6E9CE81EFFBFA468AE935E3E68B2 /* github.png */; };
@@ -329,6 +327,7 @@
 		B637DFDCE0B829C422DC903B78C0064C /* A0PasswordStrengthErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA87D5892DE466CD078F088641B7539 /* A0PasswordStrengthErrorHandler.m */; };
 		B66A9FB2F89CD3CE1D7C2CD972C872C2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0336FCA2384B6504EEF84DF8C21CC154 /* View+MASAdditions.m */; };
 		B78303F122AB118010E3318FBBDFA0F2 /* A0SimpleKeychain+KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4C3D1125420B6DDED22C4D954BCD05 /* A0SimpleKeychain+KeyPair.m */; };
+		B84664604C45C9E0FD58D02AFB784ABA /* Pods-SogetiTrainingCampTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF4091BB7E2A1E2E08CFA7B18AA5F0C /* Pods-SogetiTrainingCampTests-dummy.m */; };
 		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7150DB35A7D1E8A5FC03B42E19853599 /* UIRefreshControl+AFNetworking.m */; };
 		B9538FCCAD057A32719828BD15A21503 /* TouchIDAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 84608272B0DCDDBB241547B92AA26E33 /* TouchIDAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B97D888E0E5A7DF149E857FACC315861 /* A0Connection+DatabaseValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 300ED7AE094F1DCEAA7D340C8293B4F1 /* A0Connection+DatabaseValidation.m */; };
@@ -363,6 +362,7 @@
 		C8870B20FD93357D90D826730605DB43 /* A0UsernameValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = EC239BA299C1966C5E91D7ABE018B222 /* A0UsernameValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8EE2AF54FF479C425A28FD2BAEE5E63 /* baidu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4CEFA2C947A8730D0BAE96F219510DE /* baidu@2x.png */; };
 		C8F3BA3CD0847C6896FF3A3279CF052A /* A0MainBundleCredentialProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 425158159543D4C4F71FC3D4687EF092 /* A0MainBundleCredentialProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C97B5F5B1CE77FC84F4DAB769D2B6DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CB27039FB0EE3B8ED51CC4EEE21F /* Foundation.framework */; };
 		C9AE453C3A621DD67AE55FA018D0ABE1 /* A0AuthenticationUIComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 486BE6006B75428D11658D68D04BC264 /* A0AuthenticationUIComponent.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CA50218E7AB5D2D9B549930563DF552E /* A0GenericAPIErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DEC6A2F0B6AE8428E06A44CA2C41A3 /* A0GenericAPIErrorHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA9C113874C31D54A3BA77637CDC668B /* NSObject+A0AuthenticatorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = D24FC8967D5230408150B06F81339DC4 /* NSObject+A0AuthenticatorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -475,13 +475,6 @@
 			remoteGlobalIDString = 79B00BF20F633D1AB968161A4D77D9DA;
 			remoteInfo = TouchIDAuth;
 		};
-		1533A86AE0B1087CBEF07A03FBC6CB98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F5C86FBBDED437E11571B8A5FEFA8F9;
-			remoteInfo = Masonry;
-		};
 		1F2E91F9DEC208AB9A86947C980147AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -489,33 +482,12 @@
 			remoteGlobalIDString = 792B65AC7289FAF759CFE57E83CC0C2C;
 			remoteInfo = SimpleKeychain;
 		};
-		217D2F123E9AEB65C63750BBE4461064 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01B733043FA109E383277BFB9A7F8AC4;
-			remoteInfo = Lock;
-		};
-		21A7E8E3FDA193FF63189B1FA8F65F4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79B00BF20F633D1AB968161A4D77D9DA;
-			remoteInfo = TouchIDAuth;
-		};
-		2B31B6278AF72CB2B03E4BDBA0AAE2F9 /* PBXContainerItemProxy */ = {
+		32BD236B64DA9922723F89A70EC5A516 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
 			remoteInfo = AFNetworking;
-		};
-		2D6F524DB685306D1BDE51B46D2FF780 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 792B65AC7289FAF759CFE57E83CC0C2C;
-			remoteInfo = SimpleKeychain;
 		};
 		770F07027322DE6AE340417F025127AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -524,12 +496,47 @@
 			remoteGlobalIDString = C9AACDF747E31B7E9C7B419F3E7BD9F3;
 			remoteInfo = "Lock-Auth0";
 		};
+		7D6DDA09829CBD0182D7B51A2E5887B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B733043FA109E383277BFB9A7F8AC4;
+			remoteInfo = Lock;
+		};
+		8F850B1F227EB8BBCB3DA739C3A71654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B733043FA109E383277BFB9A7F8AC4;
+			remoteInfo = Lock;
+		};
 		9E874AE450A089C8D339A5F61D0EC3E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
 			remoteInfo = AFNetworking;
+		};
+		A2402A912238E0125BB06DD10A2493AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79B00BF20F633D1AB968161A4D77D9DA;
+			remoteInfo = TouchIDAuth;
+		};
+		A635FDE9908C6B3899E28D846DE974D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79B00BF20F633D1AB968161A4D77D9DA;
+			remoteInfo = TouchIDAuth;
+		};
+		BB957BF00B9783BE73CD6D81C0FD8695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 792B65AC7289FAF759CFE57E83CC0C2C;
+			remoteInfo = SimpleKeychain;
 		};
 		BBAC2C6A23EA16E52F712710F85EC526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -538,13 +545,40 @@
 			remoteGlobalIDString = 2F5C86FBBDED437E11571B8A5FEFA8F9;
 			remoteInfo = Masonry;
 		};
+		C86E6F5C7D03D122B58CB5768F02DFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F5C86FBBDED437E11571B8A5FEFA8F9;
+			remoteInfo = Masonry;
+		};
+		CFEF2F46BD165373CA722BA7D6DA450F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F5C86FBBDED437E11571B8A5FEFA8F9;
+			remoteInfo = Masonry;
+		};
+		EFA05C71D44D44D80EF9E97F7E182D2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 792B65AC7289FAF759CFE57E83CC0C2C;
+			remoteInfo = SimpleKeychain;
+		};
+		F4D636DD5393A317AD86664892BBA34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
+			remoteInfo = AFNetworking;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00307C185133E2B09EEE48AA3C43303A /* NSObject+A0AuthenticatorProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A0AuthenticatorProvider.m"; path = "Lock/Core/iOS/NSObject+A0AuthenticatorProvider.m"; sourceTree = "<group>"; };
 		01F486B13413F3D504163CF245BF3181 /* A0RuleErrorHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0RuleErrorHandler.m; path = Lock/Core/A0RuleErrorHandler.m; sourceTree = "<group>"; };
 		0222907AB4B106166AF65608890B8C5C /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
-		024890884763BBE8B31D0035F86EE77C /* Pods-AwesomeProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeProject-frameworks.sh"; sourceTree = "<group>"; };
 		02BB1601C3B5EF8EE79E0A07F42022DC /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		02CE16E564AA439BB806F3C75E8EE127 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		0321A2F493512B3FBF5FBBD5910428F3 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
@@ -553,6 +587,7 @@
 		038BDB0E0DAFBA324B54A447B453BE33 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		042C9E9D21A845D5E89C128238DDF8EC /* A0AuthenticatorProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0AuthenticatorProvider.h; path = Lock/Core/A0AuthenticatorProvider.h; sourceTree = "<group>"; };
 		044A12698582A8C92B5756C37ED4F348 /* A0ModalPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ModalPresenter.h; path = Lock/CoreUI/A0ModalPresenter.h; sourceTree = "<group>"; };
+		0470B01BDF1BCCC66B800B3C67B5469F /* Auth0.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Auth0.bundle; path = Auth0.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B246AD983B805FEC6C59729ACEC772 /* A0SimpleConnectionDomainMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleConnectionDomainMatcher.m; path = Lock/Core/A0SimpleConnectionDomainMatcher.m; sourceTree = "<group>"; };
 		04B2F002FD8B35286C5A52F162ED0140 /* A0KeyUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0KeyUploader.h; path = Lock/TouchID/A0KeyUploader.h; sourceTree = "<group>"; };
 		04CE08DFC137AB0167E1AC376D7346EF /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
@@ -571,11 +606,12 @@
 		0DE0B8C3790FDD6F74E37737810E6FFC /* google.png */ = {isa = PBXFileReference; includeInIndex = 1; name = google.png; path = Auth0/Social/google.png; sourceTree = "<group>"; };
 		0E1128CBA8A621DFF8246937AE60A497 /* touchid@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "touchid@2x.png"; path = "Auth0/Images/touchid@2x.png"; sourceTree = "<group>"; };
 		0E13FA077D8EDE692BA59E4170CAEDBD /* evernote.png */ = {isa = PBXFileReference; includeInIndex = 1; name = evernote.png; path = Auth0/Social/evernote.png; sourceTree = "<group>"; };
-		0E7924C48489324AAD52F982D7CCDD42 /* Pods-AwesomeProjectTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeProjectTests-frameworks.sh"; sourceTree = "<group>"; };
+		0E717CEC905EFD561BC958FEA161FA8C /* Pods-SogetiTrainingCampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SogetiTrainingCampTests.release.xcconfig"; sourceTree = "<group>"; };
 		0E805D83BD2AF679D6C2C91FC3AD88EE /* thecity.png */ = {isa = PBXFileReference; includeInIndex = 1; name = thecity.png; path = Auth0/Social/thecity.png; sourceTree = "<group>"; };
 		0EABFD10033ECF7BB7543FF19CF87286 /* A0TouchID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0TouchID.h; path = TouchIDAuth/A0TouchID.h; sourceTree = "<group>"; };
 		0FEBF1F980332B107726D07CF2BADA51 /* A0Lock+A0LockViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0Lock+A0LockViewController.h"; path = "Lock/UI/A0Lock+A0LockViewController.h"; sourceTree = "<group>"; };
 		10F60F36FC2A63FDE7F2FC67B5177DC7 /* touchid@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "touchid@3x.png"; path = "Auth0/Images/touchid@3x.png"; sourceTree = "<group>"; };
+		117EC68D221E7C50DB1012CBFBFED4FC /* Pods-SogetiTrainingCampTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SogetiTrainingCampTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		11E0806E01F9C2A9495DC4C42211A8AA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		12B29EFAEB186D8AA02DFE5CF9B55E70 /* A0FilteredConnectionDomainMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0FilteredConnectionDomainMatcher.m; path = Lock/Core/A0FilteredConnectionDomainMatcher.m; sourceTree = "<group>"; };
 		12D3118AFD8F79E4F32DA816AB3ABD16 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -583,7 +619,6 @@
 		133C2859DF2445DABD8C665960D163E2 /* A0MainBundleCredentialProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0MainBundleCredentialProvider.m; path = Lock/Core/A0MainBundleCredentialProvider.m; sourceTree = "<group>"; };
 		138B98630EDAE6895B95771FB6DAF198 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		15008488C8816D75A4DE3C1DAE277AA2 /* A0IdentityProviderAuthenticator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0IdentityProviderAuthenticator.m; path = Lock/Provider/A0IdentityProviderAuthenticator.m; sourceTree = "<group>"; };
-		15809D1D69BCA6D9FDB510D4DB881FEF /* Pods-AwesomeProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeProject-resources.sh"; sourceTree = "<group>"; };
 		164DF4B0C44850E43F8166A25CF38B3C /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
 		16A83FBEEDDCCB3F0ABC58F43C4D2EAE /* NSError+A0APIError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+A0APIError.m"; path = "Lock/Core/Private/NSError+A0APIError.m"; sourceTree = "<group>"; };
 		17305CDA890F02C185386A670CB976A1 /* touchid.png */ = {isa = PBXFileReference; includeInIndex = 1; name = touchid.png; path = Auth0/Images/touchid.png; sourceTree = "<group>"; };
@@ -592,9 +627,9 @@
 		1AA9B18DAF579235C712D56277F90A54 /* A0PasswordFieldView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0PasswordFieldView.h; path = Lock/UI/Private/A0PasswordFieldView.h; sourceTree = "<group>"; };
 		1C870B403E5A317C5A5387595EBE76E0 /* A0LockViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0LockViewController.m; path = Lock/UI/A0LockViewController.m; sourceTree = "<group>"; };
 		1CABDDD3E86635041303B9BF52845889 /* NSError+A0APIError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+A0APIError.h"; path = "Lock/Core/Private/NSError+A0APIError.h"; sourceTree = "<group>"; };
-		1DAA98935E7EFED9E3673E7AD0A3F275 /* Pods-AwesomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		1EAD1D67F4C714358551155E2A82D8A3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		1EED4E3A6A9F1854FB8470CEAF2C4EC0 /* touchid_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "touchid_selected@3x.png"; path = "Auth0/Images/touchid_selected@3x.png"; sourceTree = "<group>"; };
+		1F9B243527F75C1442D44123F641B891 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB8E57E69D48B7475065FDCAAFC5F67 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		20E8B8850E72D7409E0DFFFD70277C70 /* NSError+A0AuthAPIError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+A0AuthAPIError.h"; path = "Lock/Core/NSError+A0AuthAPIError.h"; sourceTree = "<group>"; };
 		21AB099D9399EE46268258590BDC31E4 /* A0PKCE.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0PKCE.m; path = Lock/Core/A0PKCE.m; sourceTree = "<group>"; };
@@ -621,12 +656,11 @@
 		2F99C568F4EAF6246219727EDA3AB926 /* A0ContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ContainerViewController.h; path = Lock/UI/A0ContainerViewController.h; sourceTree = "<group>"; };
 		2FFF30841C8C11EA5F0D56D3C68173A7 /* A0WebKitViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0WebKitViewController.h; path = Lock/WebView/A0WebKitViewController.h; sourceTree = "<group>"; };
 		300ED7AE094F1DCEAA7D340C8293B4F1 /* A0Connection+DatabaseValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0Connection+DatabaseValidation.m"; path = "Lock/UI/Private/A0Connection+DatabaseValidation.m"; sourceTree = "<group>"; };
-		31F581518EED1467B623A60A0C3F9598 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3105585F840BD44DCE0F0BE2E12CDBE1 /* libPods-SogetiTrainingCamp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SogetiTrainingCamp.a"; path = "libPods-SogetiTrainingCamp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3324A0FB34DB39EB1F6E1A2F8CDD9001 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		336FCBB0821298CECA000878CB6BC05F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		33729EDE0B09ED094249C138C1CE9A40 /* A0SMSCodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SMSCodeViewController.h; path = Lock/SMS/Private/A0SMSCodeViewController.h; sourceTree = "<group>"; };
 		337E18546CF92791EE94B201F22504DF /* yammer.png */ = {isa = PBXFileReference; includeInIndex = 1; name = yammer.png; path = Auth0/Social/yammer.png; sourceTree = "<group>"; };
-		342A92CB07C27E2D0EE168AB3012BCDD /* Pods-AwesomeProjectTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeProjectTests-resources.sh"; sourceTree = "<group>"; };
 		3433D2970417E1D975C1722EDAB2041A /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		34E049049578D8F310D23ADEF0731FED /* vkontakte@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "vkontakte@3x.png"; path = "Auth0/Social/vkontakte@3x.png"; sourceTree = "<group>"; };
 		34ECDDFEDC63615B05D6BADF3EAF1D35 /* auth0@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "auth0@3x.png"; path = "Auth0/Social/auth0@3x.png"; sourceTree = "<group>"; };
@@ -654,12 +688,11 @@
 		3B655C446310421A74F59AE439B74E55 /* lock.png */ = {isa = PBXFileReference; includeInIndex = 1; name = lock.png; path = Auth0/Images/lock.png; sourceTree = "<group>"; };
 		3B7E8BFBA6C4E4CDA96B9C64BADE7C11 /* A0EmailMagicLinkViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0EmailMagicLinkViewController.m; path = Lock/Email/Private/A0EmailMagicLinkViewController.m; sourceTree = "<group>"; };
 		3B8AE4B7D8A61D9ED63FD72AD4E2872B /* A0WebAuthentication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0WebAuthentication.m; path = Lock/Core/Private/A0WebAuthentication.m; sourceTree = "<group>"; };
+		3BD5A319F8AED0EE8F9199FD895AF085 /* libLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLock.a; path = libLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA4225EDDD35B163A22715627101B8C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		3CE4B656BA63E5B64B8FC61C00E7983F /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		3D3033B7FCB505E4636D0BEDA516AD7F /* A0PKCE.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0PKCE.h; path = Lock/Core/A0PKCE.h; sourceTree = "<group>"; };
 		3D70C10553DE58F7FF0FF3666F8DF7A5 /* lock@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "lock@3x.png"; path = "Auth0/Images/lock@3x.png"; sourceTree = "<group>"; };
-		3E4DAE9B82587B8B3DF5059F5D46BFED /* Auth0.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Auth0.bundle; path = Auth0.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EF26FFF6FF4CB7AFD8F0DF9293758A6 /* Pods-AwesomeProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		408D10816E32270881B6CB49E8E270BA /* A0EmailValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0EmailValidator.h; path = Lock/CoreUI/A0EmailValidator.h; sourceTree = "<group>"; };
 		40A0BEDDB8F4CB5A3FC0B2C61D68B2F6 /* weibo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "weibo@3x.png"; path = "Auth0/Social/weibo@3x.png"; sourceTree = "<group>"; };
 		4102CC2CE9D8AFFE3F2A2B58C38CABC2 /* A0PasswordStrengthErrorHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0PasswordStrengthErrorHandler.h; path = Lock/Core/A0PasswordStrengthErrorHandler.h; sourceTree = "<group>"; };
@@ -680,6 +713,7 @@
 		4541096B1CC623559549634657DDFDE7 /* A0LockConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0LockConfiguration.h; path = Lock/UI/A0LockConfiguration.h; sourceTree = "<group>"; };
 		455EF0AC9730F7C2EACA51D453536EA7 /* A0Token.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0Token.m; path = Lock/Core/A0Token.m; sourceTree = "<group>"; };
 		45AD86C87BD8266E60D8F9FB180DFDFA /* A0TouchID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0TouchID.m; path = TouchIDAuth/A0TouchID.m; sourceTree = "<group>"; };
+		463B6AA755A8F1D677D6400E01F7A555 /* Pods-SogetiTrainingCamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SogetiTrainingCamp.release.xcconfig"; sourceTree = "<group>"; };
 		469A279AEF1CEE0B8A74CBD4ACFB62DC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		47D6327874E83D2C0D18BAF742312D16 /* A0FailureAuthenticator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0FailureAuthenticator.h; path = Lock/Provider/Private/A0FailureAuthenticator.h; sourceTree = "<group>"; };
 		47F19C9C29008615CE91A0B86D2A3B50 /* A0EmailLockViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0EmailLockViewController.h; path = Lock/Email/A0EmailLockViewController.h; sourceTree = "<group>"; };
@@ -690,7 +724,7 @@
 		49A117F0E2F0CE8C172F3D37EA566E3F /* yammer@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "yammer@2x.png"; path = "Auth0/Social/yammer@2x.png"; sourceTree = "<group>"; };
 		49ADE9035E383B843405C976413A1F42 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		4A4A1FFEF162EF74423895A97001BD6E /* yammer@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "yammer@3x.png"; path = "Auth0/Social/yammer@3x.png"; sourceTree = "<group>"; };
-		4B823EFA146469CA697C8954306F608E /* Pods-AwesomeProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B796293808C64EE75CEB0D90575D9C8 /* Pods-SogetiTrainingCampTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SogetiTrainingCampTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4B8DFC17AFA030B8221EBEE9BEB4321E /* A0TouchIDLockViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0TouchIDLockViewController.m; path = Lock/TouchID/A0TouchIDLockViewController.m; sourceTree = "<group>"; };
 		4B9F7DEA0A909DB9D232024D23A77CEB /* yandex.png */ = {isa = PBXFileReference; includeInIndex = 1; name = yandex.png; path = Auth0/Social/yandex.png; sourceTree = "<group>"; };
 		4CAE98E874489D73062B462099F35876 /* A0ServiceCollectionViewLayoutDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ServiceCollectionViewLayoutDelegate.m; path = Lock/UI/Private/A0ServiceCollectionViewLayoutDelegate.m; sourceTree = "<group>"; };
@@ -699,7 +733,6 @@
 		4E81841683938C06F036B556B6B280E2 /* renren.png */ = {isa = PBXFileReference; includeInIndex = 1; name = renren.png; path = Auth0/Social/renren.png; sourceTree = "<group>"; };
 		4E98ABBDAF91390E5174D95C5153EBB4 /* A0WebKitViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0WebKitViewController.m; path = Lock/WebView/A0WebKitViewController.m; sourceTree = "<group>"; };
 		4E9D1A30F46698F3C48B6F869EC84A09 /* A0MFACodeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0MFACodeView.m; path = Lock/UI/A0MFACodeView.m; sourceTree = "<group>"; };
-		4EA4DE97D7B64448054424E9A3034476 /* libSimpleKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSimpleKeychain.a; path = libSimpleKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA86357B4EDD828D0176C270DF024DC /* A0ChangePasswordView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChangePasswordView.h; path = Lock/UI/A0ChangePasswordView.h; sourceTree = "<group>"; };
 		4FF0C0F2CABADADC6CFA0DAEFDF331E8 /* A0ChangePasswordView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ChangePasswordView.m; path = Lock/UI/A0ChangePasswordView.m; sourceTree = "<group>"; };
 		504954A10AD675A8D60EBE61708F77F4 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -719,7 +752,6 @@
 		5CA663C58309D1F7BCA18617EDD8E03E /* A0Connection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0Connection.h; path = Lock/Core/A0Connection.h; sourceTree = "<group>"; };
 		5CACCE32406869293BD2B7880B7FB3BB /* person.png */ = {isa = PBXFileReference; includeInIndex = 1; name = person.png; path = Auth0/Images/person.png; sourceTree = "<group>"; };
 		5D9C6215B921638C9081951CA0FCEDB9 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		5E51EFD9CFAE48F9357FDDECDD153AEA /* libPods-AwesomeProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AwesomeProjectTests.a"; path = "libPods-AwesomeProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EAFEB0E3AA95604B8D54679076DCE8D /* aol@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "aol@2x.png"; path = "Auth0/Social/aol@2x.png"; sourceTree = "<group>"; };
 		5EF227DE4E5BB523F6FD5C4B3FC3B264 /* A0SocialLoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SocialLoginViewController.h; path = Lock/UI/Private/A0SocialLoginViewController.h; sourceTree = "<group>"; };
 		5F20FE0ED670E609714D7EACAD008DFF /* A0SimpleConnectionDomainMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleConnectionDomainMatcher.h; path = Lock/Core/A0SimpleConnectionDomainMatcher.h; sourceTree = "<group>"; };
@@ -727,7 +759,6 @@
 		608695948F446DABC97BEF14D9D04487 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		60DE729F9DF0AAF22DE3B2C8C86E055E /* auth0@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "auth0@2x.png"; path = "Auth0/Social/auth0@2x.png"; sourceTree = "<group>"; };
 		6235362ECFECDF996468076BC8AFA04C /* A0CountryCodeTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0CountryCodeTableViewController.m; path = Lock/SMS/Private/A0CountryCodeTableViewController.m; sourceTree = "<group>"; };
-		6254DCE255E343759160A730F387AFB3 /* libPods-AwesomeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AwesomeProject.a"; path = "libPods-AwesomeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		630188F1F66400858DF2670CEF59CD03 /* soundcloud@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "soundcloud@2x.png"; path = "Auth0/Social/soundcloud@2x.png"; sourceTree = "<group>"; };
 		653D9120248709419BBF4EFAC3E81F9F /* A0LockNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0LockNotification.h; path = Lock/Core/A0LockNotification.h; sourceTree = "<group>"; };
 		65C32DC88F5FC243F8EDFB1348309CA0 /* A0Token.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0Token.h; path = Lock/Core/A0Token.h; sourceTree = "<group>"; };
@@ -736,6 +767,7 @@
 		66A21DBF0FB634684147950459582C32 /* github@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "github@2x.png"; path = "Auth0/Social/github@2x.png"; sourceTree = "<group>"; };
 		66AA9677A9ED2CC113C011FB01485D32 /* mail@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "mail@3x.png"; path = "Auth0/Images/mail@3x.png"; sourceTree = "<group>"; };
 		67C66C2E06CAD3DBAF37711F8B8366DD /* A0LockSignUpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0LockSignUpViewController.h; path = Lock/UI/A0LockSignUpViewController.h; sourceTree = "<group>"; };
+		67CD818253331351436BF860A9116592 /* Pods-SogetiTrainingCamp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SogetiTrainingCamp-resources.sh"; sourceTree = "<group>"; };
 		68775B5B60DBCCEE559842B9DCA18705 /* cellphone@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cellphone@3x.png"; path = "Auth0/Images/cellphone@3x.png"; sourceTree = "<group>"; };
 		689467E286C9ECE1EB3ABBE2B6674F10 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		6A46CCE46ACDD3F54FE0AA91B92D8B1A /* paypal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "paypal@2x.png"; path = "Auth0/Social/paypal@2x.png"; sourceTree = "<group>"; };
@@ -743,14 +775,16 @@
 		6B81BA6B1690D082D8BA0DB1A6CF5D22 /* instagram.png */ = {isa = PBXFileReference; includeInIndex = 1; name = instagram.png; path = Auth0/Social/instagram.png; sourceTree = "<group>"; };
 		6DA87D5892DE466CD078F088641B7539 /* A0PasswordStrengthErrorHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0PasswordStrengthErrorHandler.m; path = Lock/Core/A0PasswordStrengthErrorHandler.m; sourceTree = "<group>"; };
 		6E700140873C4CCD0F6C4DE2F2269F70 /* A0SMSSendCodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SMSSendCodeViewController.m; path = Lock/SMS/Private/A0SMSSendCodeViewController.m; sourceTree = "<group>"; };
+		6EF7AE33F550BA0B61DD830B3038E5AF /* Pods-SogetiTrainingCampTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SogetiTrainingCampTests-frameworks.sh"; sourceTree = "<group>"; };
 		6F8CC252F6FDCAA2AE8EEFD40ADEF170 /* A0Lock+A0LockViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0Lock+A0LockViewController.m"; path = "Lock/UI/A0Lock+A0LockViewController.m"; sourceTree = "<group>"; };
+		7043F0CEE75E066DB0C9732146C92F65 /* Pods-SogetiTrainingCampTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SogetiTrainingCampTests-resources.sh"; sourceTree = "<group>"; };
 		705820112CB1DD759F3FBF52CF3D5747 /* A0LoginView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0LoginView.m; path = Lock/UI/A0LoginView.m; sourceTree = "<group>"; };
 		7107B61CC020EC874D2F8115EEBE0BBF /* A0SmallSocialServiceCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SmallSocialServiceCollectionView.h; path = Lock/UI/Private/A0SmallSocialServiceCollectionView.h; sourceTree = "<group>"; };
 		71317A8FC7DE269483C5BCF298F057AC /* vkontakte.png */ = {isa = PBXFileReference; includeInIndex = 1; name = vkontakte.png; path = Auth0/Social/vkontakte.png; sourceTree = "<group>"; };
 		7150DB35A7D1E8A5FC03B42E19853599 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		7165423E70075DE1530FEC34EDD29D32 /* A0Lock+A0TouchIDLockViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0Lock+A0TouchIDLockViewController.m"; path = "Lock/TouchID/A0Lock+A0TouchIDLockViewController.m"; sourceTree = "<group>"; };
+		719AAACF82CC6FECC977166482BC9A01 /* Pods-SogetiTrainingCamp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SogetiTrainingCamp-frameworks.sh"; sourceTree = "<group>"; };
 		71FD39E19C16DB0EEBDE35F885420169 /* A0LockConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0LockConfiguration.m; path = Lock/UI/A0LockConfiguration.m; sourceTree = "<group>"; };
-		7264FF68F7ACD727C000ADA1020F1584 /* Pods-AwesomeProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomeProject-dummy.m"; sourceTree = "<group>"; };
 		727CA9171B38EC16C7E87741CFBE8B84 /* A0JSONResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0JSONResponseSerializer.h; path = Lock/Core/Private/A0JSONResponseSerializer.h; sourceTree = "<group>"; };
 		7282E67C38882CDBEF9625BE0A21E665 /* A0TouchIDSignUpViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0TouchIDSignUpViewController.m; path = Lock/TouchID/Private/A0TouchIDSignUpViewController.m; sourceTree = "<group>"; };
 		730B03CF7189F1090E931429B6877B9A /* A0ChangePasswordViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChangePasswordViewController.h; path = Lock/UI/Private/A0ChangePasswordViewController.h; sourceTree = "<group>"; };
@@ -764,7 +798,6 @@
 		76E1C078C5B91407CC8D5260199DD68F /* A0Lock+A0EmailLockViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0Lock+A0EmailLockViewController.h"; path = "Lock/Email/A0Lock+A0EmailLockViewController.h"; sourceTree = "<group>"; };
 		777CB2C9A651EDE50F6A488E3576DC7A /* A0AuthParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0AuthParameters.m; path = Lock/Core/A0AuthParameters.m; sourceTree = "<group>"; };
 		77A0A6825FEE312E262084854799F91A /* A0KeyboardHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0KeyboardHandler.h; path = Lock/Utils/A0KeyboardHandler.h; sourceTree = "<group>"; };
-		780F663482ACF392DFB20527F5D5EA01 /* Pods-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		7895B23029D5A1CC4AA7B0C34A8C5304 /* mail.png */ = {isa = PBXFileReference; includeInIndex = 1; name = mail.png; path = Auth0/Images/mail.png; sourceTree = "<group>"; };
 		7900D04DEBE5AA9BF233FAB0B6D58885 /* A0SmallSocialServiceCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SmallSocialServiceCollectionView.m; path = Lock/UI/Private/A0SmallSocialServiceCollectionView.m; sourceTree = "<group>"; };
 		79A49724258D10E6F3CB18067A84B156 /* fitbit@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "fitbit@2x.png"; path = "Auth0/Social/fitbit@2x.png"; sourceTree = "<group>"; };
@@ -775,7 +808,6 @@
 		7BE197ABD9A7499AD1A98F0448EAC647 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		7CE9260804501C62754174E9A95B497A /* cellphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = cellphone.png; path = Auth0/Images/cellphone.png; sourceTree = "<group>"; };
 		7D57A62DA471F2AF2E75C5C4E9E03416 /* A0Strategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0Strategy.h; path = Lock/Core/A0Strategy.h; sourceTree = "<group>"; };
-		7D6705311EF3695534555B47DC908CF3 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB6B9A379BD3792F16DE94CA13C6D45 /* facebook.png */ = {isa = PBXFileReference; includeInIndex = 1; name = facebook.png; path = Auth0/Social/facebook.png; sourceTree = "<group>"; };
 		80C9F26B9A86B0A02DDEF810F6519169 /* Lock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Lock-dummy.m"; sourceTree = "<group>"; };
 		815FA357BB17B29ACB7712DC042EC418 /* A0NavigationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0NavigationView.m; path = Lock/UI/Private/A0NavigationView.m; sourceTree = "<group>"; };
@@ -789,7 +821,7 @@
 		849E0A948AD42F3F293B6DB24D4BD690 /* A0ProgressButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ProgressButton.h; path = Lock/Utils/A0ProgressButton.h; sourceTree = "<group>"; };
 		853677C23D02FE6B130EF772441060A2 /* A0Theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0Theme.h; path = Lock/CoreUI/A0Theme.h; sourceTree = "<group>"; };
 		85B536A29062180917E0C6EFB7CACA22 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8632CE50944ECD7724448A757E7396BB /* libLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLock.a; path = libLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85DF3CE1E87FCF5EC2061D19CE6E8267 /* libPods-SogetiTrainingCampTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SogetiTrainingCampTests.a"; path = "libPods-SogetiTrainingCampTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C331CF1711B2AAC945CC6E7BED7FBF /* A0TouchIDRegisterViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0TouchIDRegisterViewController.h; path = Lock/TouchID/Private/A0TouchIDRegisterViewController.h; sourceTree = "<group>"; };
 		8751A25236EE21BE28A0769F165BBB8A /* evernote@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "evernote@2x.png"; path = "Auth0/Social/evernote@2x.png"; sourceTree = "<group>"; };
 		87BAD7B2193E6270B66B052179926C36 /* person@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "person@3x.png"; path = "Auth0/Images/person@3x.png"; sourceTree = "<group>"; };
@@ -802,7 +834,7 @@
 		8981FDC55341396F708F0536A8FB28F8 /* linkedin.png */ = {isa = PBXFileReference; includeInIndex = 1; name = linkedin.png; path = Auth0/Social/linkedin.png; sourceTree = "<group>"; };
 		89CF62BB538C0181428E422A917CF154 /* A0JSONResponseSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0JSONResponseSerializer.m; path = Lock/Core/Private/A0JSONResponseSerializer.m; sourceTree = "<group>"; };
 		89DCEF0663AA905A3AF984C67C2D55B5 /* people.png */ = {isa = PBXFileReference; includeInIndex = 1; name = people.png; path = Auth0/Images/people.png; sourceTree = "<group>"; };
-		89FD6172552B890F20196248B40AD841 /* Pods-AwesomeProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A6371FBF9D52292F9BE805613F74C93 /* libTouchIDAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTouchIDAuth.a; path = libTouchIDAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABBBE68DEE699090450CCCCAD6408FD /* miicard@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "miicard@2x.png"; path = "Auth0/Social/miicard@2x.png"; sourceTree = "<group>"; };
 		8C14B4DF2697D079A24C3D8BE19D8223 /* UIButton+A0SolidButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+A0SolidButton.h"; path = "Lock/CoreUI/UIButton+A0SolidButton.h"; sourceTree = "<group>"; };
 		8CA01C4DD484371CBF1A9D2C7338CC17 /* linkedin@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "linkedin@2x.png"; path = "Auth0/Social/linkedin@2x.png"; sourceTree = "<group>"; };
@@ -814,13 +846,11 @@
 		8D65B2A9C0CF7232A3C452689A1D0FF3 /* secondary_button_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "secondary_button_normal@2x.png"; path = "Auth0/Images/secondary_button_normal@2x.png"; sourceTree = "<group>"; };
 		8DD7376006CD3C8EB06A32C6E52A4D80 /* yahoo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "yahoo@3x.png"; path = "Auth0/Social/yahoo@3x.png"; sourceTree = "<group>"; };
 		8EAF2A2C0DA4E0C8B0C754936E4F028C /* A0SMSLockViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SMSLockViewController.m; path = Lock/SMS/A0SMSLockViewController.m; sourceTree = "<group>"; };
-		8ED22F68A9DEE18001AD04D30F25302F /* Pods-AwesomeProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomeProjectTests-dummy.m"; sourceTree = "<group>"; };
 		8F8CBA7E701CCD17CB318688F2B4AB46 /* A0ServiceViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ServiceViewModel.h; path = Lock/UI/Private/A0ServiceViewModel.h; sourceTree = "<group>"; };
 		90318E00619D38A0466E00434FF84F89 /* A0Lock+A0SMSLockViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0Lock+A0SMSLockViewController.m"; path = "Lock/SMS/A0Lock+A0SMSLockViewController.m"; sourceTree = "<group>"; };
 		90A14969B3917755FC871B5059A5A15E /* NSData+A0JWTSafeBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+A0JWTSafeBase64.m"; path = "TouchIDAuth/NSData+A0JWTSafeBase64.m"; sourceTree = "<group>"; };
 		90BD5B300727BBE6ED911C97EA1CCE49 /* touchid_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "touchid_selected@2x.png"; path = "Auth0/Images/touchid_selected@2x.png"; sourceTree = "<group>"; };
 		90F955CB43F60104FE118524A3E4E363 /* yahoo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "yahoo@2x.png"; path = "Auth0/Social/yahoo@2x.png"; sourceTree = "<group>"; };
-		915E6B67BBA02448861E7C3CFD6741FF /* Pods-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		924B688A7DAEC528F19484388C5623F5 /* A0AuthenticationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0AuthenticationProvider.h; path = Lock/Provider/A0AuthenticationProvider.h; sourceTree = "<group>"; };
 		925479521B00FB558FF252D7193E2650 /* A0DatabaseLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0DatabaseLoginViewController.m; path = Lock/UI/Private/A0DatabaseLoginViewController.m; sourceTree = "<group>"; };
 		928B17AE8AD3E6930038B9186EE5DBA3 /* NSDictionary+A0QueryParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+A0QueryParameters.m"; path = "Lock/Core/Private/NSDictionary+A0QueryParameters.m"; sourceTree = "<group>"; };
@@ -877,6 +907,7 @@
 		AC5DC41CCCEB3CAB44E138DC8D17A152 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		AC6030DC682AEBFEF0594C341B65FFEB /* thecity@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "thecity@2x.png"; path = "Auth0/Social/thecity@2x.png"; sourceTree = "<group>"; };
 		AE986FD81C9404291DE9F60BC28F6B7A /* box@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "box@2x.png"; path = "Auth0/Social/box@2x.png"; sourceTree = "<group>"; };
+		AEEAD677CE503B2A564840929EBD5F25 /* Pods-SogetiTrainingCamp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SogetiTrainingCamp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B02AEFF1AAC9890FDF66A925BD2C807F /* shopify.png */ = {isa = PBXFileReference; includeInIndex = 1; name = shopify.png; path = Auth0/Social/shopify.png; sourceTree = "<group>"; };
 		B0E963605458EED164DC3A2ABDAE86BD /* microsoft@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "microsoft@3x.png"; path = "Auth0/Social/microsoft@3x.png"; sourceTree = "<group>"; };
 		B22E75A5DA0410FB52FE1A1DFF5C94F4 /* mail@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "mail@2x.png"; path = "Auth0/Images/mail@2x.png"; sourceTree = "<group>"; };
@@ -886,17 +917,18 @@
 		B4CB48A25A1F8260CA7E45A7F5992016 /* A0PasswordlessLockViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0PasswordlessLockViewModel.h; path = Lock/CoreUI/A0PasswordlessLockViewModel.h; sourceTree = "<group>"; };
 		B4CEFA2C947A8730D0BAE96F219510DE /* baidu@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "baidu@2x.png"; path = "Auth0/Social/baidu@2x.png"; sourceTree = "<group>"; };
 		B508DBD346235801E86F46C53FA1BEBC /* A0Lock+A0TouchIDLockViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0Lock+A0TouchIDLockViewController.h"; path = "Lock/TouchID/A0Lock+A0TouchIDLockViewController.h"; sourceTree = "<group>"; };
+		B54714212AB6217AFB47F9162A90F63D /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59BD4AADE0CA464501CCA375B711BD4 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		B5ADC17C9057EB607A95A1CEA2F9005E /* A0Logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0Logger.h; path = Lock/Core/Private/A0Logger.h; sourceTree = "<group>"; };
 		B8E6FE8E96BB12CAAA7E68EAED40ECC3 /* A0RSAKeyExporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0RSAKeyExporter.m; path = TouchIDAuth/A0RSAKeyExporter.m; sourceTree = "<group>"; };
 		B9A269C30E79FD5281FBE8FC66B3A838 /* A0BaseAuthenticator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0BaseAuthenticator.m; path = Lock/Provider/A0BaseAuthenticator.m; sourceTree = "<group>"; };
+		B9C7285CAE5659F3B6C81CC5B412DB30 /* Pods-SogetiTrainingCamp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SogetiTrainingCamp-dummy.m"; sourceTree = "<group>"; };
 		BABEADC5D6F8B1ED45E97C1432830961 /* vimeo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "vimeo@2x.png"; path = "Auth0/Social/vimeo@2x.png"; sourceTree = "<group>"; };
 		BB40D6FD6795EF5D7D9C90BE63911933 /* secondary_button_highlighted.png */ = {isa = PBXFileReference; includeInIndex = 1; name = secondary_button_highlighted.png; path = Auth0/Images/secondary_button_highlighted.png; sourceTree = "<group>"; };
 		BBC19750896EAAC1E66E98A2863AA6B2 /* A0SMSMagicLinkViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SMSMagicLinkViewController.h; path = Lock/SMS/Private/A0SMSMagicLinkViewController.h; sourceTree = "<group>"; };
 		BBDAE38876877A9E9903652A46E04BFC /* A0TouchIDRegisterViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0TouchIDRegisterViewController.m; path = Lock/TouchID/Private/A0TouchIDRegisterViewController.m; sourceTree = "<group>"; };
 		BC0BCF29B1ABF4CA8DD2F6E1EDE3B2B4 /* baidu@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "baidu@3x.png"; path = "Auth0/Social/baidu@3x.png"; sourceTree = "<group>"; };
 		BC4860E752961151D7D99F21954D488B /* A0EnterpriseLoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0EnterpriseLoginViewController.h; path = Lock/UI/Private/A0EnterpriseLoginViewController.h; sourceTree = "<group>"; };
-		BCDC2C3C5755248C454005BBEEBA0FD4 /* Pods-AwesomeProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BD105431331BABABC7F42AB05E3C00ED /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		BE975DC81C8CF010292B4B5FB28F6ADC /* A0Application.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0Application.m; path = Lock/Core/A0Application.m; sourceTree = "<group>"; };
 		BEC09E7137B30A50E3EA4787AA43FF17 /* A0Lock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0Lock.m; path = Lock/Core/A0Lock.m; sourceTree = "<group>"; };
@@ -912,7 +944,7 @@
 		C2127EA979005A098F60B403D33E42DE /* A0LockLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0LockLogger.h; path = Lock/Core/A0LockLogger.h; sourceTree = "<group>"; };
 		C21684C6B86B5C6F60A27F891DB36067 /* A0FileCredentialProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0FileCredentialProvider.m; path = Lock/Core/A0FileCredentialProvider.m; sourceTree = "<group>"; };
 		C228971C3A5A4E042971BDE4A08E3797 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		C2E349AFC08F6A70E06774DD90BC3215 /* Pods-AwesomeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeProject.release.xcconfig"; sourceTree = "<group>"; };
+		C2FDA2978B41102DCE63C821CD58E5E8 /* libSimpleKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSimpleKeychain.a; path = libSimpleKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3403F16A7F554CEB16A41AF71CA4F9A /* A0ErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ErrorCode.h; path = Lock/Core/A0ErrorCode.h; sourceTree = "<group>"; };
 		C3E152EAB60C4695819E517A15850015 /* 37signals@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "37signals@3x.png"; path = "Auth0/Social/37signals@3x.png"; sourceTree = "<group>"; };
 		C46EFB22505BC418A162A0987819FD2B /* renren@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "renren@2x.png"; path = "Auth0/Social/renren@2x.png"; sourceTree = "<group>"; };
@@ -923,8 +955,8 @@
 		C5D3A54ECEDB18EFAC465C676E33E746 /* A0LockEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0LockEventDelegate.h; path = Lock/UI/A0LockEventDelegate.h; sourceTree = "<group>"; };
 		C62F77A607A7196A12C164042B55F94B /* A0ChangePasswordViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ChangePasswordViewController.m; path = Lock/UI/Private/A0ChangePasswordViewController.m; sourceTree = "<group>"; };
 		C6463988AD84FCB823611608269C4E60 /* vimeo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "vimeo@3x.png"; path = "Auth0/Social/vimeo@3x.png"; sourceTree = "<group>"; };
+		C652E4BFCD77ADAB0BF79DAFE7D2FFDE /* Pods-SogetiTrainingCamp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SogetiTrainingCamp-acknowledgements.plist"; sourceTree = "<group>"; };
 		C68EB520808B6444D45A3CE22B002E11 /* A0RoundedBoxView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0RoundedBoxView.m; path = Lock/UI/Private/A0RoundedBoxView.m; sourceTree = "<group>"; };
-		C6CE2D8C17FF66724957FEA3F39A4F59 /* libTouchIDAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTouchIDAuth.a; path = libTouchIDAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C719EF965BEDF263E4F3031A2F024B78 /* instagram@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "instagram@3x.png"; path = "Auth0/Social/instagram@3x.png"; sourceTree = "<group>"; };
 		C7731C719ADF62DDCDE637FFD7879CFD /* A0APIv1Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0APIv1Router.m; path = Lock/Core/A0APIv1Router.m; sourceTree = "<group>"; };
 		C8B47F33687D48B2D2B7BC9DB4A0DFA3 /* shopify@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "shopify@3x.png"; path = "Auth0/Social/shopify@3x.png"; sourceTree = "<group>"; };
@@ -934,6 +966,7 @@
 		C973F8B8A2B3D062684C52DA96FBDC3F /* miicard@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "miicard@3x.png"; path = "Auth0/Social/miicard@3x.png"; sourceTree = "<group>"; };
 		CB253EA3E61D08948138F0F0801C0381 /* salesforce.png */ = {isa = PBXFileReference; includeInIndex = 1; name = salesforce.png; path = Auth0/Social/salesforce.png; sourceTree = "<group>"; };
 		CD5512CA465D7B4EB25487A1E859B182 /* A0SignUpView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SignUpView.m; path = Lock/UI/A0SignUpView.m; sourceTree = "<group>"; };
+		CDA9607B1CDF57EAFCB0AE2E84AD9FC4 /* Pods-SogetiTrainingCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SogetiTrainingCamp.debug.xcconfig"; sourceTree = "<group>"; };
 		CEAE6D74454A087839F6BEABB20583D7 /* Lock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Lock.xcconfig; sourceTree = "<group>"; };
 		CF7154FD67BA7CAAA86CB55E98AF1A7D /* A0CredentialProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0CredentialProvider.h; path = Lock/Core/A0CredentialProvider.h; sourceTree = "<group>"; };
 		D08DC4D6D219B7C50DC4B179EFDC9636 /* A0Errors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0Errors.h; path = Lock/Core/A0Errors.h; sourceTree = "<group>"; };
@@ -986,6 +1019,7 @@
 		EC7FA203CB1F8FFF56247BFB20C1B49B /* salesforce@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "salesforce@3x.png"; path = "Auth0/Social/salesforce@3x.png"; sourceTree = "<group>"; };
 		EC8AAFDDB77E1FB2B5BAA149F7841BA9 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		ECE14A376D0A87F12B1E2003B62058C3 /* A0MFACodeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0MFACodeView.h; path = Lock/UI/A0MFACodeView.h; sourceTree = "<group>"; };
+		ECF4091BB7E2A1E2E08CFA7B18AA5F0C /* Pods-SogetiTrainingCampTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SogetiTrainingCampTests-dummy.m"; sourceTree = "<group>"; };
 		ED073336CAB1BE3A5E58A26198F64896 /* A0NavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0NavigationController.h; path = Lock/UI/Private/A0NavigationController.h; sourceTree = "<group>"; };
 		ED4C3D1125420B6DDED22C4D954BCD05 /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
 		EDC9CB27039FB0EE3B8ED51CC4EEE21F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -1014,12 +1048,21 @@
 		FBD9D792408D3B18243CC406F0F7CC15 /* A0SimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleKeychain.m; path = SimpleKeychain/A0SimpleKeychain.m; sourceTree = "<group>"; };
 		FC52E531A3E45CEC3FC95E06F8ACD186 /* A0BaseAuthenticator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0BaseAuthenticator.h; path = Lock/Provider/A0BaseAuthenticator.h; sourceTree = "<group>"; };
 		FD519E7BF5ED4BCBCBFB91DFB65E07E3 /* A0FullActiveDirectoryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0FullActiveDirectoryViewController.h; path = Lock/UI/Private/A0FullActiveDirectoryViewController.h; sourceTree = "<group>"; };
+		FD81BFF358E8BDE2117336719382E25E /* Pods-SogetiTrainingCampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SogetiTrainingCampTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDC7ED943B91A48B96E4F9DF163031D2 /* ResourceBundle-Auth0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Auth0-Info.plist"; sourceTree = "<group>"; };
 		FE3D2FC2B03EB5C754877FC9BE7556C5 /* UIConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIConstants.h; path = Lock/Utils/UIConstants.h; sourceTree = "<group>"; };
 		FE8C91AC5E3A02064DB1EDFD2E863BBD /* A0UsernameValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0UsernameValidator.m; path = Lock/CoreUI/A0UsernameValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0527ADE35FCCD18C89894994D7EB7CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8508084EED4085E340AA3E42E5A55BDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		111D9870751B6EFD7F7596E72D1C19B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1045,19 +1088,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		742DDEA8D46FE64A5A48FAFAF13C674A /* Frameworks */ = {
+		9871282489D1B46637070E89F8F1EDB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186696BD26ABAC2B63B37B584A03D1C2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BE0482F193F1BBF5499431CAEF2A3CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36DFB2A12786C14CAAE6D142DEEEC261 /* Foundation.framework in Frameworks */,
+				C97B5F5B1CE77FC84F4DAB769D2B6DF6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,21 +1280,6 @@
 			path = Lock;
 			sourceTree = "<group>";
 		};
-		221FA890CAD49A5122195E8691258960 /* Pods-AwesomeProject */ = {
-			isa = PBXGroup;
-			children = (
-				89FD6172552B890F20196248B40AD841 /* Pods-AwesomeProject-acknowledgements.markdown */,
-				4B823EFA146469CA697C8954306F608E /* Pods-AwesomeProject-acknowledgements.plist */,
-				7264FF68F7ACD727C000ADA1020F1584 /* Pods-AwesomeProject-dummy.m */,
-				024890884763BBE8B31D0035F86EE77C /* Pods-AwesomeProject-frameworks.sh */,
-				15809D1D69BCA6D9FDB510D4DB881FEF /* Pods-AwesomeProject-resources.sh */,
-				1DAA98935E7EFED9E3673E7AD0A3F275 /* Pods-AwesomeProject.debug.xcconfig */,
-				C2E349AFC08F6A70E06774DD90BC3215 /* Pods-AwesomeProject.release.xcconfig */,
-			);
-			name = "Pods-AwesomeProject";
-			path = "Target Support Files/Pods-AwesomeProject";
-			sourceTree = "<group>";
-		};
 		24D0E9512697677121E3854A08C4C759 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1395,6 +1415,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		571C1CD3C988EC87E976A39A320B7949 /* Pods-SogetiTrainingCamp */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAD677CE503B2A564840929EBD5F25 /* Pods-SogetiTrainingCamp-acknowledgements.markdown */,
+				C652E4BFCD77ADAB0BF79DAFE7D2FFDE /* Pods-SogetiTrainingCamp-acknowledgements.plist */,
+				B9C7285CAE5659F3B6C81CC5B412DB30 /* Pods-SogetiTrainingCamp-dummy.m */,
+				719AAACF82CC6FECC977166482BC9A01 /* Pods-SogetiTrainingCamp-frameworks.sh */,
+				67CD818253331351436BF860A9116592 /* Pods-SogetiTrainingCamp-resources.sh */,
+				CDA9607B1CDF57EAFCB0AE2E84AD9FC4 /* Pods-SogetiTrainingCamp.debug.xcconfig */,
+				463B6AA755A8F1D677D6400E01F7A555 /* Pods-SogetiTrainingCamp.release.xcconfig */,
+			);
+			name = "Pods-SogetiTrainingCamp";
+			path = "Target Support Files/Pods-SogetiTrainingCamp";
+			sourceTree = "<group>";
+		};
 		58690C4A30D09E9A96DCE02C043AF200 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1423,21 +1458,6 @@
 			name = TouchID;
 			sourceTree = "<group>";
 		};
-		68E18CD4C7AF017934122490720B70DC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3E4DAE9B82587B8B3DF5059F5D46BFED /* Auth0.bundle */,
-				7D6705311EF3695534555B47DC908CF3 /* libAFNetworking.a */,
-				8632CE50944ECD7724448A757E7396BB /* libLock.a */,
-				31F581518EED1467B623A60A0C3F9598 /* libMasonry.a */,
-				6254DCE255E343759160A730F387AFB3 /* libPods-AwesomeProject.a */,
-				5E51EFD9CFAE48F9357FDDECDD153AEA /* libPods-AwesomeProjectTests.a */,
-				4EA4DE97D7B64448054424E9A3034476 /* libSimpleKeychain.a */,
-				C6CE2D8C17FF66724957FEA3F39A4F59 /* libTouchIDAuth.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		696FF3F203C47797812D6B94C0BBF7C5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1447,6 +1467,21 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SimpleKeychain";
+			sourceTree = "<group>";
+		};
+		764025767C6EDB704B855E6194F47D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0470B01BDF1BCCC66B800B3C67B5469F /* Auth0.bundle */,
+				B54714212AB6217AFB47F9162A90F63D /* libAFNetworking.a */,
+				3BD5A319F8AED0EE8F9199FD895AF085 /* libLock.a */,
+				1F9B243527F75C1442D44123F641B891 /* libMasonry.a */,
+				3105585F840BD44DCE0F0BE2E12CDBE1 /* libPods-SogetiTrainingCamp.a */,
+				85DF3CE1E87FCF5EC2061D19CE6E8267 /* libPods-SogetiTrainingCampTests.a */,
+				C2FDA2978B41102DCE63C821CD58E5E8 /* libSimpleKeychain.a */,
+				8A6371FBF9D52292F9BE805613F74C93 /* libTouchIDAuth.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		785553737B06AFC3DA711DDEB7D56194 /* Frameworks */ = {
@@ -1463,8 +1498,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				785553737B06AFC3DA711DDEB7D56194 /* Frameworks */,
 				27CB67E1982E3D51C37518A85932EA40 /* Pods */,
-				68E18CD4C7AF017934122490720B70DC /* Products */,
-				91D5F39115E80DF36051B109E3DE06FA /* Targets Support Files */,
+				764025767C6EDB704B855E6194F47D49 /* Products */,
+				F315A10987095600CA18D91ACDC6EEF6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1509,15 +1544,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Masonry";
-			sourceTree = "<group>";
-		};
-		91D5F39115E80DF36051B109E3DE06FA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				221FA890CAD49A5122195E8691258960 /* Pods-AwesomeProject */,
-				C7AAA1D5CA8CCE417542141EA5A1DF2D /* Pods-AwesomeProjectTests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		973A1F18105413F2040AC090D678B2DE /* UI */ = {
@@ -1766,21 +1792,6 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
-		C7AAA1D5CA8CCE417542141EA5A1DF2D /* Pods-AwesomeProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				BCDC2C3C5755248C454005BBEEBA0FD4 /* Pods-AwesomeProjectTests-acknowledgements.markdown */,
-				3EF26FFF6FF4CB7AFD8F0DF9293758A6 /* Pods-AwesomeProjectTests-acknowledgements.plist */,
-				8ED22F68A9DEE18001AD04D30F25302F /* Pods-AwesomeProjectTests-dummy.m */,
-				0E7924C48489324AAD52F982D7CCDD42 /* Pods-AwesomeProjectTests-frameworks.sh */,
-				342A92CB07C27E2D0EE168AB3012BCDD /* Pods-AwesomeProjectTests-resources.sh */,
-				915E6B67BBA02448861E7C3CFD6741FF /* Pods-AwesomeProjectTests.debug.xcconfig */,
-				780F663482ACF392DFB20527F5D5EA01 /* Pods-AwesomeProjectTests.release.xcconfig */,
-			);
-			name = "Pods-AwesomeProjectTests";
-			path = "Target Support Files/Pods-AwesomeProjectTests";
-			sourceTree = "<group>";
-		};
 		D22C3A8E91352B777927146F9B87DF42 /* SMS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1817,6 +1828,30 @@
 				352E907F86FFFA82CDFD25D8CB961CFB /* A0Lock+A0EmailLockViewController.m */,
 			);
 			name = Email;
+			sourceTree = "<group>";
+		};
+		D98725540DDF11A3578877A2E3354677 /* Pods-SogetiTrainingCampTests */ = {
+			isa = PBXGroup;
+			children = (
+				117EC68D221E7C50DB1012CBFBFED4FC /* Pods-SogetiTrainingCampTests-acknowledgements.markdown */,
+				4B796293808C64EE75CEB0D90575D9C8 /* Pods-SogetiTrainingCampTests-acknowledgements.plist */,
+				ECF4091BB7E2A1E2E08CFA7B18AA5F0C /* Pods-SogetiTrainingCampTests-dummy.m */,
+				6EF7AE33F550BA0B61DD830B3038E5AF /* Pods-SogetiTrainingCampTests-frameworks.sh */,
+				7043F0CEE75E066DB0C9732146C92F65 /* Pods-SogetiTrainingCampTests-resources.sh */,
+				FD81BFF358E8BDE2117336719382E25E /* Pods-SogetiTrainingCampTests.debug.xcconfig */,
+				0E717CEC905EFD561BC958FEA161FA8C /* Pods-SogetiTrainingCampTests.release.xcconfig */,
+			);
+			name = "Pods-SogetiTrainingCampTests";
+			path = "Target Support Files/Pods-SogetiTrainingCampTests";
+			sourceTree = "<group>";
+		};
+		F315A10987095600CA18D91ACDC6EEF6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				571C1CD3C988EC87E976A39A320B7949 /* Pods-SogetiTrainingCamp */,
+				D98725540DDF11A3578877A2E3354677 /* Pods-SogetiTrainingCampTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		F94B1A5D426EC916F773BF5B63F874A5 /* Security */ = {
@@ -2052,7 +2087,7 @@
 			);
 			name = Lock;
 			productName = Lock;
-			productReference = 8632CE50944ECD7724448A757E7396BB /* libLock.a */;
+			productReference = 3BD5A319F8AED0EE8F9199FD895AF085 /* libLock.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2F5C86FBBDED437E11571B8A5FEFA8F9 /* Masonry */ = {
@@ -2069,44 +2104,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 31F581518EED1467B623A60A0C3F9598 /* libMasonry.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		302CA984CF6230EB639224F96E6DA99D /* Pods-AwesomeProjectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A3DA41C7DEA9981B32713A6571EF92A /* Build configuration list for PBXNativeTarget "Pods-AwesomeProjectTests" */;
-			buildPhases = (
-				E42B199E28B1137F4A0F6E328E67887E /* Sources */,
-				742DDEA8D46FE64A5A48FAFAF13C674A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-AwesomeProjectTests";
-			productName = "Pods-AwesomeProjectTests";
-			productReference = 5E51EFD9CFAE48F9357FDDECDD153AEA /* libPods-AwesomeProjectTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		6344678F38753FCB5CAED6B586EAF03D /* Pods-AwesomeProject */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7765B246B718528EFCBE93BA834C1679 /* Build configuration list for PBXNativeTarget "Pods-AwesomeProject" */;
-			buildPhases = (
-				95A6C8936BA9DADBD404EB71096C9B09 /* Sources */,
-				8BE0482F193F1BBF5499431CAEF2A3CA /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E258AC446FD5B571D541E2FFA5832EB3 /* PBXTargetDependency */,
-				8EC4AF841510E1A3FAF9E653D5615098 /* PBXTargetDependency */,
-				451F4C411D3F0527E8E4598041EA8C08 /* PBXTargetDependency */,
-				C4030138A7FE6A06F43262DFE553D008 /* PBXTargetDependency */,
-				73DBC5F0A1F48200005D369580030E1F /* PBXTargetDependency */,
-			);
-			name = "Pods-AwesomeProject";
-			productName = "Pods-AwesomeProject";
-			productReference = 6254DCE255E343759160A730F387AFB3 /* libPods-AwesomeProject.a */;
+			productReference = 1F9B243527F75C1442D44123F641B891 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		792B65AC7289FAF759CFE57E83CC0C2C /* SimpleKeychain */ = {
@@ -2123,7 +2121,7 @@
 			);
 			name = SimpleKeychain;
 			productName = SimpleKeychain;
-			productReference = 4EA4DE97D7B64448054424E9A3034476 /* libSimpleKeychain.a */;
+			productReference = C2FDA2978B41102DCE63C821CD58E5E8 /* libSimpleKeychain.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		79B00BF20F633D1AB968161A4D77D9DA /* TouchIDAuth */ = {
@@ -2141,7 +2139,7 @@
 			);
 			name = TouchIDAuth;
 			productName = TouchIDAuth;
-			productReference = C6CE2D8C17FF66724957FEA3F39A4F59 /* libTouchIDAuth.a */;
+			productReference = 8A6371FBF9D52292F9BE805613F74C93 /* libTouchIDAuth.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9E033EDB5EC0819481B0546434FA577B /* AFNetworking */ = {
@@ -2158,7 +2156,49 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 7D6705311EF3695534555B47DC908CF3 /* libAFNetworking.a */;
+			productReference = B54714212AB6217AFB47F9162A90F63D /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AD5B11DC7918E161CE6E791013B3DF43 /* Pods-SogetiTrainingCampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E1782276412B4338ABCC80D5ECCE44 /* Build configuration list for PBXNativeTarget "Pods-SogetiTrainingCampTests" */;
+			buildPhases = (
+				2D630E03581733F02B1AED1CA0FD5B4A /* Sources */,
+				0527ADE35FCCD18C89894994D7EB7CDB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACFAAE90B7EA2C73F053F0D380FAEAE9 /* PBXTargetDependency */,
+				DB82E6DFF06371FA9F1EF2A8ABF3171A /* PBXTargetDependency */,
+				1155280EDDA739542CBD0475C043CF49 /* PBXTargetDependency */,
+				C10431E222BBB03E78A0C2EAA6532E9D /* PBXTargetDependency */,
+				53049C9BF08DF1F2F46879EF2EDBF531 /* PBXTargetDependency */,
+			);
+			name = "Pods-SogetiTrainingCampTests";
+			productName = "Pods-SogetiTrainingCampTests";
+			productReference = 85DF3CE1E87FCF5EC2061D19CE6E8267 /* libPods-SogetiTrainingCampTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B9C18404A4E12268550F4070CCA52CEC /* Pods-SogetiTrainingCamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D14B2D2838EC6551DF3AF600FE50E03 /* Build configuration list for PBXNativeTarget "Pods-SogetiTrainingCamp" */;
+			buildPhases = (
+				D820328BC136A218E06DC2EAF80E19F8 /* Sources */,
+				9871282489D1B46637070E89F8F1EDB7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6889F868D0896AE549F917FF3DD2C434 /* PBXTargetDependency */,
+				73E4726E4CBB358FA449543B4B409245 /* PBXTargetDependency */,
+				306770F062E634DB966B3F504CF124C0 /* PBXTargetDependency */,
+				286C5AE15471A3FB62F6BC6C5AE180C0 /* PBXTargetDependency */,
+				E3AD43E31BD66F3A753507143EC01C70 /* PBXTargetDependency */,
+			);
+			name = "Pods-SogetiTrainingCamp";
+			productName = "Pods-SogetiTrainingCamp";
+			productReference = 3105585F840BD44DCE0F0BE2E12CDBE1 /* libPods-SogetiTrainingCamp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C9AACDF747E31B7E9C7B419F3E7BD9F3 /* Lock-Auth0 */ = {
@@ -2175,7 +2215,7 @@
 			);
 			name = "Lock-Auth0";
 			productName = "Lock-Auth0";
-			productReference = 3E4DAE9B82587B8B3DF5059F5D46BFED /* Auth0.bundle */;
+			productReference = 0470B01BDF1BCCC66B800B3C67B5469F /* Auth0.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -2195,7 +2235,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 68E18CD4C7AF017934122490720B70DC /* Products */;
+			productRefGroup = 764025767C6EDB704B855E6194F47D49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2203,8 +2243,8 @@
 				01B733043FA109E383277BFB9A7F8AC4 /* Lock */,
 				C9AACDF747E31B7E9C7B419F3E7BD9F3 /* Lock-Auth0 */,
 				2F5C86FBBDED437E11571B8A5FEFA8F9 /* Masonry */,
-				6344678F38753FCB5CAED6B586EAF03D /* Pods-AwesomeProject */,
-				302CA984CF6230EB639224F96E6DA99D /* Pods-AwesomeProjectTests */,
+				B9C18404A4E12268550F4070CCA52CEC /* Pods-SogetiTrainingCamp */,
+				AD5B11DC7918E161CE6E791013B3DF43 /* Pods-SogetiTrainingCampTests */,
 				792B65AC7289FAF759CFE57E83CC0C2C /* SimpleKeychain */,
 				79B00BF20F633D1AB968161A4D77D9DA /* TouchIDAuth */,
 			);
@@ -2373,6 +2413,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D630E03581733F02B1AED1CA0FD5B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B84664604C45C9E0FD58D02AFB784ABA /* Pods-SogetiTrainingCampTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E7C641C39131C76823D3E73E7E031A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2514,18 +2562,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A6C8936BA9DADBD404EB71096C9B09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				956CE2F0F1953834CD524B07EDEEBFB2 /* Pods-AwesomeProject-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CBB38965FE6EF8E2E5501E8720A3F5BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D820328BC136A218E06DC2EAF80E19F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CCBAF3EC52043884098B07902F63D4 /* Pods-SogetiTrainingCamp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2542,22 +2590,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E42B199E28B1137F4A0F6E328E67887E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45873A7039B8C6D99C2533302EB2C153 /* Pods-AwesomeProjectTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		451F4C411D3F0527E8E4598041EA8C08 /* PBXTargetDependency */ = {
+		1155280EDDA739542CBD0475C043CF49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 2F5C86FBBDED437E11571B8A5FEFA8F9 /* Masonry */;
-			targetProxy = 1533A86AE0B1087CBEF07A03FBC6CB98 /* PBXContainerItemProxy */;
+			targetProxy = C86E6F5C7D03D122B58CB5768F02DFE5 /* PBXContainerItemProxy */;
+		};
+		286C5AE15471A3FB62F6BC6C5AE180C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 792B65AC7289FAF759CFE57E83CC0C2C /* SimpleKeychain */;
+			targetProxy = BB957BF00B9783BE73CD6D81C0FD8695 /* PBXContainerItemProxy */;
+		};
+		306770F062E634DB966B3F504CF124C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 2F5C86FBBDED437E11571B8A5FEFA8F9 /* Masonry */;
+			targetProxy = CFEF2F46BD165373CA722BA7D6DA450F /* PBXContainerItemProxy */;
+		};
+		53049C9BF08DF1F2F46879EF2EDBF531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TouchIDAuth;
+			target = 79B00BF20F633D1AB968161A4D77D9DA /* TouchIDAuth */;
+			targetProxy = A2402A912238E0125BB06DD10A2493AB /* PBXContainerItemProxy */;
 		};
 		5E55D519603804CB5CF75C732C246F6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2565,17 +2623,23 @@
 			target = 792B65AC7289FAF759CFE57E83CC0C2C /* SimpleKeychain */;
 			targetProxy = 1F2E91F9DEC208AB9A86947C980147AB /* PBXContainerItemProxy */;
 		};
+		6889F868D0896AE549F917FF3DD2C434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = 32BD236B64DA9922723F89A70EC5A516 /* PBXContainerItemProxy */;
+		};
 		6BCDAF860401BD4A900575769B89B48D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimpleKeychain;
 			target = 792B65AC7289FAF759CFE57E83CC0C2C /* SimpleKeychain */;
 			targetProxy = 05BD2B9499B8351C78A960DB36B3D7E1 /* PBXContainerItemProxy */;
 		};
-		73DBC5F0A1F48200005D369580030E1F /* PBXTargetDependency */ = {
+		73E4726E4CBB358FA449543B4B409245 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TouchIDAuth;
-			target = 79B00BF20F633D1AB968161A4D77D9DA /* TouchIDAuth */;
-			targetProxy = 21A7E8E3FDA193FF63189B1FA8F65F4B /* PBXContainerItemProxy */;
+			name = Lock;
+			target = 01B733043FA109E383277BFB9A7F8AC4 /* Lock */;
+			targetProxy = 7D6DDA09829CBD0182D7B51A2E5887B6 /* PBXContainerItemProxy */;
 		};
 		81F4671D73CA00D5C9170971D74B19FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2583,11 +2647,11 @@
 			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
 			targetProxy = 9E874AE450A089C8D339A5F61D0EC3E5 /* PBXContainerItemProxy */;
 		};
-		8EC4AF841510E1A3FAF9E653D5615098 /* PBXTargetDependency */ = {
+		ACFAAE90B7EA2C73F053F0D380FAEAE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Lock;
-			target = 01B733043FA109E383277BFB9A7F8AC4 /* Lock */;
-			targetProxy = 217D2F123E9AEB65C63750BBE4461064 /* PBXContainerItemProxy */;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = F4D636DD5393A317AD86664892BBA34D /* PBXContainerItemProxy */;
 		};
 		AF83E3AB80E39B149E4A7FCAAD32BDD4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2601,17 +2665,23 @@
 			target = 79B00BF20F633D1AB968161A4D77D9DA /* TouchIDAuth */;
 			targetProxy = 104996C888CA1FC647D6B8B0C73E5573 /* PBXContainerItemProxy */;
 		};
-		C4030138A7FE6A06F43262DFE553D008 /* PBXTargetDependency */ = {
+		C10431E222BBB03E78A0C2EAA6532E9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimpleKeychain;
 			target = 792B65AC7289FAF759CFE57E83CC0C2C /* SimpleKeychain */;
-			targetProxy = 2D6F524DB685306D1BDE51B46D2FF780 /* PBXContainerItemProxy */;
+			targetProxy = EFA05C71D44D44D80EF9E97F7E182D2F /* PBXContainerItemProxy */;
 		};
-		E258AC446FD5B571D541E2FFA5832EB3 /* PBXTargetDependency */ = {
+		DB82E6DFF06371FA9F1EF2A8ABF3171A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
-			targetProxy = 2B31B6278AF72CB2B03E4BDBA0AAE2F9 /* PBXContainerItemProxy */;
+			name = Lock;
+			target = 01B733043FA109E383277BFB9A7F8AC4 /* Lock */;
+			targetProxy = 8F850B1F227EB8BBCB3DA739C3A71654 /* PBXContainerItemProxy */;
+		};
+		E3AD43E31BD66F3A753507143EC01C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TouchIDAuth;
+			target = 79B00BF20F633D1AB968161A4D77D9DA /* TouchIDAuth */;
+			targetProxy = A635FDE9908C6B3899E28D846DE974D2 /* PBXContainerItemProxy */;
 		};
 		FFF9572D78463693334AAE0E2A103DFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2712,55 +2782,9 @@
 			};
 			name = Debug;
 		};
-		0ADBA81D47C756652E3329FACFAD330B /* Debug */ = {
+		25ECE41F93B1EE5791E932CFD3767A7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 915E6B67BBA02448861E7C3CFD6741FF /* Pods-AwesomeProjectTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		16F23E42CA855AB8A5B7BBF562707ECB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 780F663482ACF392DFB20527F5D5EA01 /* Pods-AwesomeProjectTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2301B0588FF50CA30847DC011F65B5B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2E349AFC08F6A70E06774DD90BC3215 /* Pods-AwesomeProject.release.xcconfig */;
+			baseConfigurationReference = 0E717CEC905EFD561BC958FEA161FA8C /* Pods-SogetiTrainingCampTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2795,6 +2819,29 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3610D698131C9724D2B33BFD72F8BA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463B6AA755A8F1D677D6400E01F7A555 /* Pods-SogetiTrainingCamp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -2907,9 +2954,9 @@
 			};
 			name = Release;
 		};
-		4686BBBDB4C65F655EC48AB3B5A4116C /* Debug */ = {
+		6CF1701405BDFB91A14D3F19FC8E0110 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DAA98935E7EFED9E3673E7AD0A3F275 /* Pods-AwesomeProject.debug.xcconfig */;
+			baseConfigurationReference = FD81BFF358E8BDE2117336719382E25E /* Pods-SogetiTrainingCampTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3039,6 +3086,29 @@
 			};
 			name = Debug;
 		};
+		E6BECF965E007834CC0D985A891BDF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA9607B1CDF57EAFCB0AE2E84AD9FC4 /* Pods-SogetiTrainingCamp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		FF778088B62C05BE1205DAE628D151DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4928EFD4C477A95C150FA450BDD2CE42 /* AFNetworking.xcconfig */;
@@ -3065,15 +3135,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A3DA41C7DEA9981B32713A6571EF92A /* Build configuration list for PBXNativeTarget "Pods-AwesomeProjectTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0ADBA81D47C756652E3329FACFAD330B /* Debug */,
-				16F23E42CA855AB8A5B7BBF562707ECB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3092,11 +3153,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7765B246B718528EFCBE93BA834C1679 /* Build configuration list for PBXNativeTarget "Pods-AwesomeProject" */ = {
+		6D14B2D2838EC6551DF3AF600FE50E03 /* Build configuration list for PBXNativeTarget "Pods-SogetiTrainingCamp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4686BBBDB4C65F655EC48AB3B5A4116C /* Debug */,
-				2301B0588FF50CA30847DC011F65B5B4 /* Release */,
+				E6BECF965E007834CC0D985A891BDF79 /* Debug */,
+				3610D698131C9724D2B33BFD72F8BA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3142,6 +3203,15 @@
 			buildConfigurations = (
 				E4774CBADCC9E3D56F83C51F49BF6FD5 /* Debug */,
 				35EB92F9E51D1ADC1C69D1AECAE4812F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E1782276412B4338ABCC80D5ECCE44 /* Build configuration list for PBXNativeTarget "Pods-SogetiTrainingCampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF1701405BDFB91A14D3F19FC8E0110 /* Debug */,
+				25ECE41F93B1EE5791E932CFD3767A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
