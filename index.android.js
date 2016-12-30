@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 //import LoginPage from './LoginPage'
-import MainMenu from './MainMenu'
+import EventsMenu from './EventsMenu'
 import SplashScreen from './SplashScreen'
 
 class TrainingCampApp extends Component{
@@ -21,7 +21,7 @@ class TrainingCampApp extends Component{
 			case "SplashScreen":
 				return <SplashScreen navigator={nav} {...route.passProps} />
 			case "MainMenu":
-				return <MainMenu navigator={nav} {...route.passProps} />
+				return <EventsMenu navigator={nav} {...route.passProps} />
 		}
 	}
   render() {
