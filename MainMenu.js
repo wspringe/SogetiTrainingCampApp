@@ -3,6 +3,7 @@ import { View, Text, TouchableHighlight, StyleSheet, Navigator } from 'react-nat
 import Drawer from 'react-native-drawer';
 import ControlPanel from './ControlPanelAdmin';
 import NavigationBar from 'react-native-navbar';
+import MenuIcon from './MenuIcon';
 
 export default class MainMenu extends Component {
   static contextTypes = {
@@ -33,6 +34,7 @@ export default class MainMenu extends Component {
     };
     const titleConfig = {
       title: 'Main Menu',
+      backgroundColor: 'orange',
     };
 
     return (
@@ -76,7 +78,13 @@ export default class MainMenu extends Component {
 
         <NavigationBar
           title={titleConfig}
-          leftButton={leftButtonConfig} />
+          leftButton={
+            <MenuIcon 
+            style={{ marginLeft: 8, marginTop: 8 }}
+            onPress={() => this._drawer.open()} />
+          }
+          tintColor='orange'
+          />
 
         <View style={styles.container}>
         <View style={styles.header}>
@@ -104,5 +112,5 @@ var styles = StyleSheet.create({
         alignItems: 'center',
         flex: .5,
         backgroundColor: 'transparent'
-    }
+    },
 })
