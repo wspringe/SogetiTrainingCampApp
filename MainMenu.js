@@ -56,6 +56,7 @@ export default class MainMenu extends Component {
           this.setState({drawerOpen: false})
         }}
         captureGestures={false}
+        //Don't touch this
         tweenHandler={ratio => ({
           main: {
             opacity: 1,
@@ -65,6 +66,7 @@ export default class MainMenu extends Component {
             backgroundColor: 'gray',
           },
         })}
+        //
         tweenDuration={100}
         panThreshold={0.08}
         disabled={false}
@@ -73,7 +75,8 @@ export default class MainMenu extends Component {
         }}
         closedDrawerOffset={() => -3}
         panOpenMask={0.2}
-        negotiatePan 
+        side="left" 
+        negotiatePan={false}
         >
 
         <NavigationBar
