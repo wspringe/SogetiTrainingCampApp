@@ -20,8 +20,13 @@ class TrainingCampApp extends Component{
 			//Note: have to use {...route.passProps} for passProps in SplashScreen to work properly
 			case "SplashScreen":
 				return <SplashScreen navigator={nav} {...route.passProps} />
+<<<<<<< HEAD
 			case "MainMenu":
 				return <EventsMenu navigator={nav} {...route.passProps} />
+=======
+			case "NextScreen":
+				return <NextScreen navigator={nav} {...route.passProps} />
+>>>>>>> ccf3ff381b7d7f39aabb387a48300bf8681b29ec
 		}
 	}
   render() {

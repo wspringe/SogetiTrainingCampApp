@@ -46,8 +46,12 @@ export default class SplashScreen extends Component{
         console.log(err);
         return;
       }
+<<<<<<< HEAD
       this.props.navigator.push({screen: 'MainMenu',
       //passes props from auth0 user info to next screen
+=======
+      this.props.navigator.push({screen: 'NextScreen',
+>>>>>>> ccf3ff381b7d7f39aabb387a48300bf8681b29ec
       passProps: {
         profile: profile,
         token: token,
