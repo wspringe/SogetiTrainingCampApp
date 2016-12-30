@@ -1,22 +1,15 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
-target 'AwesomeProject' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-
-  # Pods for AwesomeProject
-
-  target 'AwesomeProjectTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
 
 # Auth0 Lock
+target 'SogetiTrainingCamp' do
+    pod 'Lock', '~> 1.26'
+    pod 'Lock/TouchID'
+    pod 'Lock/SMS'
+    pod 'Lock/Email'
+end
 
-pod 'Lock', '~> 1.26'
-pod 'Lock/TouchID'
-pod 'Lock/SMS'
-pod 'Lock/Email'
+target 'SogetiTrainingCampTests' do
+    pod 'Lock', '~> 1.26'
+    pod 'Lock/TouchID'
+    pod 'Lock/SMS'
+    pod 'Lock/Email'
+end

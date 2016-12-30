@@ -7,6 +7,7 @@ For development, I use [VS code](https://code.visualstudio.com/) and followed [t
 Current required packages:
 * react-native-lock
 * react-native-drawer
+* react-native-navbar
 
 **Setting up the project on your machine locally**  
 1. `git init`  
@@ -20,5 +21,3 @@ Current required packages:
 1. Signup for a new account and create an email and password.  
 2. Afterwards, login with the email and password that was registered.  
 3. Verify that the login worked and that you entered into the application.  
-
-**This is a test of github flow**

@@ -85,14 +85,9 @@ def enableProguardInReleaseBuilds = false
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
-    
-    packagingOptions {
-    exclude 'META-INF/LICENSE'
-    exclude 'META-INF/NOTICE'
-    }
 
     defaultConfig {
-        applicationId "com.awesomeproject"
+        applicationId "com.sogetitrainingcamp"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
@@ -128,6 +123,11 @@ android {
             }
         }
     }
+
+    packagingOptions {
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/NOTICE'
+}
 }
 
 dependencies {
