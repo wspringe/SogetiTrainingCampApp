@@ -9,9 +9,9 @@ import {
 	TouchableOpacity,
 } from 'react-native';
 
-//import LoginPage from './LoginPage'
-import EventsMenu from './EventsMenu'
-import SplashScreen from './SplashScreen'
+import EventsMenu from './EventsMenu';
+import SplashScreen from './SplashScreen';
+import EventDetails from './EventDetails';
 
 class TrainingCampApp extends Component{
 
@@ -22,6 +22,8 @@ class TrainingCampApp extends Component{
 				return <SplashScreen navigator={nav} {...route.passProps} />
 			case "MainMenu":
 				return <EventsMenu navigator={nav} {...route.passProps} />
+			case "EventDetails":
+				return <EventDetails navigator={nav} {...route.passProps} />
 		}
 	}
   render() {

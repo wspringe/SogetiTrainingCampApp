@@ -3,6 +3,7 @@ import {
   View, 
   Text, 
   TouchableHighlight, 
+  TouchableOpacity,
   StyleSheet, 
   Navigator, 
   ScrollView 
@@ -32,7 +33,11 @@ export default class MainMenu extends Component {
   _goBack() {
   	console.log("We're going back!");
   	this.props.navigator.push({ screen: 'SplashScreen' });
-  }
+  };
+
+  _goToDetails = () => {
+    this.props.navigator.push({ screen: 'EventDetails' })
+  };
 
   render() {
     const titleConfig = {
@@ -97,22 +102,32 @@ export default class MainMenu extends Component {
             <Text style={styles.categoryText}>  Upcoming Events</Text>
           </View>
           <View style={styles.listTextContainer}>
-            <Text>      Next Event</Text>
+            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
+              <Text>      Next Event</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.listTextContainer}>
-            <Text>      Later Event</Text>
+            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
+              <Text>      Later Event</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.listTextContainer}>
-            <Text>      Last Event</Text>
+            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
+              <Text>      Last Event</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.pastEventsTextContainer}>
             <Text style={styles.categoryText}>  Past Events</Text>
           </View>
           <View style={styles.listTextContainer}>
-            <Text>      Event 1</Text>
+            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
+              <Text>      Event 1</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.listTextContainer}>
-            <Text>      Event 2</Text>
+            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
+              <Text>      Event 2</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.hintTextContainer}>
             <Text style={styles.hintText}>Press the 3 horizontal black lines to open the menu!</Text>
@@ -130,7 +145,7 @@ var styles = StyleSheet.create({
       flexDirection: 'column',
       flex: 1,
       backgroundColor: 'transparent',
-      marginTop: 10
+      paddingTop: 10
     },
     categoryText: {
       fontSize: 20,
