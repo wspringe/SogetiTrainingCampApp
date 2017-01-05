@@ -22,7 +22,7 @@ class TrainingCampApp extends Component{
 				return <SplashScreen navigator={nav} {...route.passProps} />
 			case "MainMenu":
 				return <EventsMenu navigator={nav} {...route.passProps} />
-			case "EventDetails"
+			case "EventDetails":
 				return <EventDetails navigator={nav} {...route.passProps} />
 		}
 	}
