@@ -11,7 +11,7 @@ import {
 
 import Auth0Lock from 'react-native-lock';
 
-var credentials = require('./auth0-credentials');
+var credentials = require('../Auth-0/auth0-credentials');
 var lock = new Auth0Lock(credentials);
 
 export default class SplashScreen extends Component{
@@ -21,7 +21,7 @@ export default class SplashScreen extends Component{
         <View style={styles.messageBox}>
           <Image
             style={styles.badge}
-            source={require('./Resources/sogeti_logo.png')}
+            source={require('../Resources/sogeti_logo.png')}
           />
           <Text style={styles.title}>Sogeti Training Camp</Text>
           <Text style={styles.subtitle}>by ASU Capstone</Text>

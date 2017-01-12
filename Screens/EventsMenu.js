@@ -11,7 +11,7 @@ import {
 import Drawer from 'react-native-drawer';
 import ControlPanel from './ControlPanelAdmin';
 import NavigationBar from 'react-native-navbar';
-import MenuIcon from './MenuIcon';
+import MenuIcon from '../Icons JS/MenuIcon';
 
 export default class MainMenu extends Component {
   static contextTypes = {

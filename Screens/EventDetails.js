@@ -11,7 +11,7 @@ import {
     ScrollView
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
-import BackButtonIcon from './BackButtonIcon';
+import BackButtonIcon from '../Icons JS/BackButtonIcon';
 
 export default class EventDetails extends Component {
     _onPress = () => {

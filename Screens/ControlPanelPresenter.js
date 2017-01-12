@@ -33,7 +33,7 @@ export default class ControlPanelPresenter extends Component {
           underlayColor='gray'>
             <View style={styles.menuOptionContainer}>
               <Text style={styles.menuText}>
-                <Image style={styles.image} source={require('./Resources/events.png')} />   Events
+                <Image style={styles.image} source={require('../Resources/events.png')} />   Events
               </Text>
             </View>
           </TouchableHighlight>
@@ -43,7 +43,7 @@ export default class ControlPanelPresenter extends Component {
           underlayColor='gray'>
             <View style={styles.menuOptionContainer}>
               <Text style={styles.menuText}>
-                <Image style={styles.image} source={require('./Resources/events.png')} />   Surveys
+                <Image style={styles.image} source={require('../Resources/events.png')} />   Surveys
               </Text>
             </View>
           </TouchableHighlight>
@@ -53,7 +53,7 @@ export default class ControlPanelPresenter extends Component {
           underlayColor='gray'>
             <View style={styles.menuOptionContainer}>
               <Text style={styles.menuText}>
-                <Image style={styles.image} source={require('./Resources/events.png')} />   Activities
+                <Image style={styles.image} source={require('../Resources/events.png')} />   Activities
               </Text>
             </View>
           </TouchableHighlight>
@@ -63,7 +63,7 @@ export default class ControlPanelPresenter extends Component {
           underlayColor='gray'>
             <View style={styles.lastFirstMenuOption}>
               <Text style={styles.menuText}>
-                <Image style={styles.image} source={require('./Resources/events.png')} />   Notifications
+                <Image style={styles.image} source={require('../Resources/events.png')} />   Notifications
               </Text>
             </View>
           </TouchableHighlight>
@@ -75,7 +75,7 @@ export default class ControlPanelPresenter extends Component {
           underlayColor='gray'>
             <View style={styles.menuOptionContainer}>
               <Text style={styles.menuText}>
-                <Image style={styles.image} source={require('./Resources/events.png')} />   Event Management
+                <Image style={styles.image} source={require('../Resources/events.png')} />   Event Management
               </Text>
             </View>
           </TouchableHighlight>
@@ -85,7 +85,7 @@ export default class ControlPanelPresenter extends Component {
           underlayColor='gray'>
             <View style={styles.menuOptionContainer}>
               <Text style={styles.menuText}>
-                <Image style={styles.image} source={require('./Resources/events.png')} />   Push Notifications
+                <Image style={styles.image} source={require('../Resources/events.png')} />   Push Notifications
               </Text>
             </View>
           </TouchableHighlight>
