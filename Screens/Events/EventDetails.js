@@ -10,12 +10,14 @@ import {
     Navigator,
     ScrollView
 } from 'react-native';
+
 import NavigationBar from 'react-native-navbar';
-import BackButtonIcon from '../Icons JS/BackButtonIcon';
+import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
 export default class EventDetails extends Component {
-    _onPress = () => {
+    _goToSubmitSurvey = () => {
         console.log('click!')
+        this.props.navigator.push({screen: 'SubmitSurvey'})
     };
 
     render() {
@@ -52,7 +54,7 @@ export default class EventDetails extends Component {
                     <TouchableOpacity 
                     style={styles.surveyButton}
                     underlayColor='#949494'
-                    onPress={this._onPress.bind(this)} >
+                    onPress={this._goToSubmitSurvey.bind(this)} >
                         <Text style={{fontWeight: 'bold'}}>WRITE SURVEY</Text>
                     </TouchableOpacity>
                 </ScrollView>
@@ -65,7 +67,7 @@ var styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: 'transparent',
+        backgroundColor: 'white',
         paddingTop: 10,
         paddingLeft: 5
     },

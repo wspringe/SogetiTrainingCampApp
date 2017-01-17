@@ -9,9 +9,10 @@ import {
 	TouchableOpacity,
 } from 'react-native';
 
-import EventsMenu from './Screens/EventsMenu';
+import EventsMenu from './Screens/Events/EventsMenu';
 import SplashScreen from './Screens/SplashScreen';
-import EventDetails from './Screens/EventDetails';
+import EventDetails from './Screens/Events/EventDetails';
+import SubmitSurvey from './Screens/Surveys/SubmitSurvey';
 
 class TrainingCampApp extends Component{
 
@@ -24,6 +25,8 @@ class TrainingCampApp extends Component{
 				return <EventsMenu navigator={nav} {...route.passProps} />
 			case "EventDetails":
 				return <EventDetails navigator={nav} {...route.passProps} />
+			case "SubmitSurvey":
+				return <SubmitSurvey navigator={nav} {...route.passProps} />
 		}
 	}
   render() {
