@@ -9,9 +9,9 @@ import {
 	TouchableOpacity,
 } from 'react-native';
 
-import EventsMenu from './Screens/EventsMenu';
+import EventsMenu from './Screens/Events/EventsMenu';
 import SplashScreen from './Screens/SplashScreen';
-import EventDetails from './Screens/EventDetails';
+import EventDetails from './Screens/Events/EventDetails';
 
 class TrainingCampApp extends Component{
 

@@ -9,9 +9,9 @@ import {
   ScrollView 
 } from 'react-native';
 import Drawer from 'react-native-drawer';
-import ControlPanel from './ControlPanelAdmin';
+import ControlPanel from '../Control Panels/ControlPanelAdmin';
 import NavigationBar from 'react-native-navbar';
-import MenuIcon from '../Icons JS/MenuIcon';
+import MenuIcon from '../../Icons JS/MenuIcon';
 
 export default class MainMenu extends Component {
   static contextTypes = {
