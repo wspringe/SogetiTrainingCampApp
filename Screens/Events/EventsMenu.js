@@ -144,7 +144,7 @@ var styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
       flex: 1,
-      backgroundColor: 'transparent',
+      backgroundColor: 'white',
       paddingTop: 10
     },
     categoryText: {
