@@ -45,13 +45,18 @@ export default class MainMenu extends Component {
       backgroundColor: 'orange',
     };
 
+    const rightButtonConfig = {
+      title: 'Add',
+      handler: () => this.props.navigator.push({ screen: 'AddEvent'})
+    }
+
     return (
       <Drawer
         ref={(ref) => this._drawer = ref}
         type="overlay"
         //This is where menu goes on sidebar with props passing to ControlPanel
         content={
-          <ControlPanel closeDrawer={this.closeDrawer} name={this.props.profile.name} avatar={this.props.profile.picture} role={this.props.profile.roles}/>
+          <ControlPanel closeDrawer={this.closeDrawer} name={this.props.profile.name} avatar={this.props.profile.picture} role={this.props.profile.roles} currentPlace={"events"} />
         }
         tapToClose={true}
         styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15}}}
@@ -94,6 +99,7 @@ export default class MainMenu extends Component {
             style={{ marginLeft: 8, marginTop: 8 }}
             onPress={() => this._drawer.open()} />
           }
+          rightButton={rightButtonConfig}
           tintColor='orange'
           />
 
