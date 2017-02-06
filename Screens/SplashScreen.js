@@ -26,24 +26,24 @@ export default class SplashScreen extends Component{
 
 //needed to call json function to get data
   componentDidMount() {
-    this.loadJsonData();
+    //this.loadJsonData();
   }
 
 //json function to get json data; almost everything is copied 
 //from https://facebook.github.io/react-native/docs/network.html
-  loadJsonData() {
-    fetch('http://sample-env.uagzrjthc3.us-west-2.elasticbeanstalk.com/name')
-      .then((response) => response.json()) 
-      .then((responseJson) => { 
+  //loadJsonData() {
+    //fetch('http://sample-env.uagzrjthc3.us-west-2.elasticbeanstalk.com/name')
+      //.then((response) => response.json())
+      //.then((responseJson) => {
         //sets state of previously declared state
-        this.setState({
-          jsonData: responseJson
-        })
-      }) 
-        .catch((error) => { 
-          console.error(error); 
-        });
-  }
+        //this.setState({
+          //jsonData: responseJson
+        //})
+      //})
+      //.catch((error) => {
+        //console.error(error);
+      //});
+  //}
 
   render() {
     return (
