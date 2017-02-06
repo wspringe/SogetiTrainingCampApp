@@ -13,6 +13,7 @@ import EventsMenu from './Screens/Events/EventsMenu';
 import SplashScreen from './Screens/SplashScreen';
 import EventDetails from './Screens/Events/EventDetails';
 import SubmitSurvey from './Screens/Surveys/SubmitSurvey';
+import EditEvent from './Screens/Events/EditEvent'
 
 class TrainingCampApp extends Component{
 
@@ -27,6 +28,8 @@ class TrainingCampApp extends Component{
 				return <EventDetails navigator={nav} {...route.passProps} />
 			case "SubmitSurvey":
 				return <SubmitSurvey navigator={nav} {...route.passProps} />
+			case "EditEvent":
+				return <EditEvent navigator={nav} {...route.passProps} />
 		}
 	}
   render() {

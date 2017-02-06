@@ -25,6 +25,12 @@ export default class EventDetails extends Component {
             title: 'Event Details',
             color: "black"
         }
+
+        const rightButtonConfig = {
+            title: "Edit",
+            color: "white",
+            handler: () => this.props.navigator.push({ screen: 'EditEvent' })
+        }
         return(
             <View style={{ flex: 1, }}>
                 <NavigationBar
@@ -34,6 +40,7 @@ export default class EventDetails extends Component {
                             style={{ marginLeft: 8, marginTop: 8 }}
                             onPress={() => this.props.navigator.pop()} />
                     }
+                    rightButton={rightButtonConfig}
                     tintColor='orange'
                 />
                 <ScrollView style={styles.container}>
