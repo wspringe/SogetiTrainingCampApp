@@ -43,4 +43,4 @@ android/app/libs
 
 # Auth-0
 #
-Auth-0/auth0-credentials.js
+/Auth-0/auth0-credentials.js
