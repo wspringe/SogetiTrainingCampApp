@@ -21,6 +21,16 @@ export default class ControlPanelAdmin extends Component {
       console.log("Click!");
   }
 
+  _goToActivities() {
+    this.props.navigator.push({screen: 'ActivitiesHub', 
+    passProps: {name: this.props.name, role: this.props.role} })
+  }
+
+  _goToEventsMenu() {
+    this.props.navigator.push({screen: 'MainMenu', 
+    passProps: {name: this.props.name, role: this.props.role} })
+  }
+
   testRender() {
     //use String to cast prop to a string
     let role = String(this.props.role)
@@ -107,7 +117,7 @@ export default class ControlPanelAdmin extends Component {
           </View>
           <View style={styles.first}>
             <TouchableHighlight 
-            onPress={this._test.bind(this)}
+            onPress={this._goToEventsMenu.bind(this)}
             underlayColor='gray'>
               <View style={styles.menuOptionContainer}>
                 <Text style={styles.menuText}>
@@ -127,7 +137,7 @@ export default class ControlPanelAdmin extends Component {
             </TouchableHighlight>
 
             <TouchableHighlight 
-            onPress={this._test.bind(this)}
+            onPress={this._goToActivities.bind(this)}
             underlayColor='gray'>
               <View style={styles.menuOptionContainer}>
                 <Text style={styles.menuText}>

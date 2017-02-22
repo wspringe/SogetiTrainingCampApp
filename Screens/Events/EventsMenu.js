@@ -8,6 +8,7 @@ import {
   Navigator, 
   ScrollView 
 } from 'react-native';
+
 import Drawer from 'react-native-drawer';
 import ControlPanel from '../Control Panels/ControlPanel';
 import NavigationBar from 'react-native-navbar';
@@ -50,13 +51,23 @@ export default class MainMenu extends Component {
       handler: () => this.props.navigator.push({ screen: 'AddEvent'})
     }
 
+    if (this.props.profile != null)
+    {
+      var name = this.props.profile.name
+      var role = this.props.profile.roles
+    }
+    else {
+      var name = this.props.name
+      var role = this.props.role
+    }
+
     return (
       <Drawer
         ref={(ref) => this._drawer = ref}
         type="overlay"
         //This is where menu goes on sidebar with props passing to ControlPanel
         content={
-          <ControlPanel closeDrawer={this.closeDrawer} name={this.props.profile.name} avatar={this.props.profile.picture} role={this.props.profile.roles} currentPlace={"events"} />
+          <ControlPanel closeDrawer={this.closeDrawer} name={name} navigator={this.props.navigator} role={role} />
         }
         tapToClose={true}
         styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15}}}
@@ -137,7 +148,7 @@ export default class MainMenu extends Component {
           </View>
           <View style={styles.hintTextContainer}>
             <Text style={styles.hintText}>Press the 3 horizontal black lines to open the menu!</Text>
-            <Text style={styles.hintText}>{this.props.profile.roles}</Text>
+            <Text style={styles.hintText}></Text>
           </View>
         </ScrollView>
         
