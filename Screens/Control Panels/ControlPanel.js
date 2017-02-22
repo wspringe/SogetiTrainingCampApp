@@ -9,13 +9,90 @@ import {
   Image
 } from 'react-native'
 
+//var role = JSON.stringify(this.props.role);
+
 export default class ControlPanelAdmin extends Component {
+
   static propTypes = {
     closeDrawer: PropTypes.func.isRequired
   };
 
   _test() {
       console.log("Click!");
+  }
+
+  testRender() {
+    //use String to cast prop to a string
+    let role = String(this.props.role)
+    switch(role) {
+      case "admin":
+      //JSX tags have to start on same line as return statement
+        return <View style={styles.second}>
+                <TouchableHighlight 
+                onPress={this._test.bind(this)}
+                underlayColor='gray'>
+                  <View style={styles.menuOptionContainer}>
+                    <Text style={styles.menuText}>
+                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Event Management
+                    </Text>
+                  </View>
+                </TouchableHighlight>
+
+                <TouchableHighlight 
+                onPress={this._test.bind(this)}
+                underlayColor='gray'>
+                  <View style={styles.menuOptionContainer}>
+                    <Text style={styles.menuText}>
+                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Manage Users
+                    </Text>
+                  </View>
+                </TouchableHighlight>
+
+                <TouchableHighlight 
+                onPress={this._test.bind(this)}
+                underlayColor='gray'>
+                  <View style={styles.menuOptionContainer}>
+                    <Text style={styles.menuText}>
+                      <Image style={styles.image} source={require('../../Resources/events.png')} />   User Roles
+                    </Text>
+                  </View>
+                </TouchableHighlight>
+
+                <TouchableHighlight 
+                onPress={this._test.bind(this)}
+                underlayColor='gray'>
+                  <View style={styles.menuOptionContainer}>
+                    <Text style={styles.menuText}>
+                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Push Notifications
+                    </Text>
+                  </View>
+                </TouchableHighlight>
+              </View>
+      case "presenter":
+        return <View style={styles.second}>
+                <TouchableHighlight 
+                onPress={this._test.bind(this)}
+                underlayColor='gray'>
+                  <View style={styles.menuOptionContainer}>
+                    <Text style={styles.menuText}>
+                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Event Management
+                    </Text>
+                  </View>
+                </TouchableHighlight>
+
+                <TouchableHighlight 
+                onPress={this._test.bind(this)}
+                underlayColor='gray'>
+                  <View style={styles.menuOptionContainer}>
+                    <Text style={styles.menuText}>
+                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Push Notifications
+                    </Text>
+                  </View>
+                </TouchableHighlight>
+              </View>
+      default:
+        return <View></View>
+    }
   }
 
   render() {
@@ -69,6 +146,8 @@ export default class ControlPanelAdmin extends Component {
               </View>
             </TouchableHighlight>
             </View>
+
+            { this.testRender() }
             
         </ScrollView>
           <View style={styles.footer}>
