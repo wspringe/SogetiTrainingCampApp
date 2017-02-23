@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+
 import { 
   View, 
   Text, 
@@ -9,6 +10,12 @@ import {
   ScrollView,
   TextInput
 } from 'react-native';
+
+import {
+  Cell,
+  Section,
+  TableView,
+} from 'react-native-tableview-simple';
 
 import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
@@ -25,6 +32,57 @@ export default class EditEvent extends Component {
       title: 'Edit Event',
       color: 'black'
     }
+
+    const CellEdit = (props) => (
+      <Cell
+        {...props}
+        cellContentView={
+          <View
+            style={{ alignItems: 'center', flexDirection: 'row', flex: 1, paddingVertical: 5 }}
+              >
+            <Text
+              allowFontScaling
+              numberOfLines={1}
+              style={{ flex: 1, fontSize: 20 }}
+                >
+              {props.title}
+            </Text>
+            <TextInput
+              style={{width: 200}}
+              defaultValue={props.defaultValue}
+              placeholder={props.placeholder}>
+            </TextInput>
+          </View>
+          }
+        />
+      );
+
+      const CellDescription = (props) => (
+      <Cell
+        {...props}
+        cellContentView={
+          <View
+            style={{ flexDirection: 'row', flex: 1, paddingVertical: 5, height: 100 }}
+              >
+            <Text
+              allowFontScaling
+              numberOfLines={1}
+              style={{ flex: 1, fontSize: 20 }}
+                >
+              {props.title}
+            </Text>
+    
+            <TextInput
+              style={{width: 200, textAlignVertical: 'top', height: 100}}
+              multiline={true}
+              defaultValue={props.defaultValue}
+              placeholder={props.placeholder}>
+            </TextInput>
+          </View>
+          }
+        />
+      );
+
       return(
         <View style={{flex: 1, }}>
           <NavigationBar
@@ -37,46 +95,15 @@ export default class EditEvent extends Component {
             rightButton={rightButtonConfig}
             tintColor='orange'
           />
-          <ScrollView style={styles.container}>
-            <View style={styles.eventNameContainer}>
-              <TextInput
-              style={styles.inputEventName}
-              placeholder= 'Event Name'
-              defaultValue='Event Name'
-              maxLength={20}
-              />
-            </View>
-            <View style={styles.eventTimeContainer}>
-              <Text style={styles.eventTime}>
-                Start Time: <TextInput 
-                             style={styles.input}
-                             placeholder='Current Time'
-                             defaultValue='Current Time' />
-              </Text>
-            </View>
-            <View style={styles.eventTimeContainer}>
-              <Text style={styles.eventTime}>
-                End Time: <TextInput
-                           style={styles.input}
-                           placeholder='End Time'
-                           defaultValue='End Time' />
-              </Text>
-            </View>
-            <View style={styles.eventTimeContainer}>
-              <Text style={styles.eventTime}>
-                Host: <TextInput
-                      style={styles.input}
-                      placeholder='Host name'
-                      defaultValue='Host name' />
-              </Text>
-            </View>
-            <Text>Description: </Text>
-            <TextInput 
-             style={styles.descriptionBody}
-             placeholder='Event Description...'
-             defaultValue='Event description...' 
-             multiline={true} />
-          </ScrollView>
+          <TableView>
+            <Section>
+              <CellEdit title="Event Name: " placeholder="Event Name" defaultValue="Event Name" />
+              <CellEdit title="Current Time: " placeholder="Current Time" defaultValue="Current Time" />
+              <CellEdit title="End Time: " placeholder="End Time" defaultValue="End Time"/>
+              <CellEdit title="Host: " placeholder="Host Name" defaultValue="Host Name" />
+              <CellDescription title= "Description:" placeholder="Description..." defaultValue="Description..." />
+            </Section>
+          </TableView>
         </View>
       )
   }
