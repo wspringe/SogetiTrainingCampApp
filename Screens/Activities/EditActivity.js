@@ -17,6 +17,7 @@ import {
   TableView,
 } from 'react-native-tableview-simple';
 
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview'
 import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
@@ -95,15 +96,17 @@ export default class EditActivity extends Component {
             rightButton={rightButtonConfig}
             tintColor='orange'
           />
-          <TableView>
-            <Section>
-              <CellEdit title="Activity Name: " placeholder="Activity Name" defaultValue="Activity Name" />
-              <CellEdit title="Current Time: " placeholder="Current Time" defaultValue="Current Time" />
-              <CellEdit title="End Time: " placeholder="End Time" defaultValue="End Time"/>
-              <CellEdit title="Host: " placeholder="Host Name" defaultValue="Host Name" />
-              <CellDescription title= "Description:" placeholder="Description..." defaultValue="Description..." />
-            </Section>
-          </TableView>
+          <KeyboardAwareScrollView>
+            <TableView>
+              <Section>
+                <CellEdit title="Activity Name: " placeholder="Activity Name" defaultValue="Activity Name" />
+                <CellEdit title="Current Time: " placeholder="Current Time" defaultValue="Current Time" />
+                <CellEdit title="End Time: " placeholder="End Time" defaultValue="End Time"/>
+                <CellEdit title="Host: " placeholder="Host Name" defaultValue="Host Name" />
+                <CellDescription title= "Description:" placeholder="Description..." defaultValue="Description..." />
+              </Section>
+            </TableView>
+          </KeyboardAwareScrollView>
         </View>
       )
   }

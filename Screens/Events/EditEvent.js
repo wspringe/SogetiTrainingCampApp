@@ -17,6 +17,7 @@ import {
   TableView,
 } from 'react-native-tableview-simple';
 
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview'
 import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
@@ -62,7 +63,7 @@ export default class EditEvent extends Component {
         {...props}
         cellContentView={
           <View
-            style={{ flexDirection: 'row', flex: 1, paddingVertical: 5, height: 100 }}
+            style={{ flexDirection: 'row', flex: 1, paddingVertical: 5, marginBottom: 10, height: 100 }}
               >
             <Text
               allowFontScaling
@@ -95,15 +96,17 @@ export default class EditEvent extends Component {
             rightButton={rightButtonConfig}
             tintColor='orange'
           />
-          <TableView>
-            <Section>
-              <CellEdit title="Event Name: " placeholder="Event Name" defaultValue="Event Name" />
-              <CellEdit title="Current Time: " placeholder="Current Time" defaultValue="Current Time" />
-              <CellEdit title="End Time: " placeholder="End Time" defaultValue="End Time"/>
-              <CellEdit title="Host: " placeholder="Host Name" defaultValue="Host Name" />
-              <CellDescription title= "Description:" placeholder="Description..." defaultValue="Description..." />
-            </Section>
-          </TableView>
+          <KeyboardAwareScrollView>
+            <TableView>
+              <Section>
+                <CellEdit title="Event Name: " placeholder="Event Name" defaultValue="Event Name" />
+                <CellEdit title="Current Time: " placeholder="Current Time" defaultValue="Current Time" />
+                <CellEdit title="End Time: " placeholder="End Time" defaultValue="End Time"/>
+                <CellEdit title="Host: " placeholder="Host Name" defaultValue="Host Name" />
+                <CellDescription title= "Description:" placeholder="Description..." defaultValue="Description..." />
+              </Section>
+            </TableView>
+          </KeyboardAwareScrollView>
         </View>
       )
   }
