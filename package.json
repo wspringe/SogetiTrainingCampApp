@@ -9,10 +9,13 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-native": "^0.41.2",
+    "react-native-autogrow-textinput": "^3.0.1",
     "react-native-azure-ad": "^0.2.0",
     "react-native-drawer": "^2.3.0",
+    "react-native-keyboard-aware-scrollview": "^1.1.5",
     "react-native-lock": "^0.4.0",
-    "react-native-navbar": "^1.5.4"
+    "react-native-navbar": "^1.5.4",
+    "react-native-tableview-simple": "^0.16.3"
   },
   "jest": {
     "preset": "jest-react-native"
