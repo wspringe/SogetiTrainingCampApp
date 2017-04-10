@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import {
+	AppState,
 	AppRegistry,
 	StyleSheet,
 	Text,
@@ -28,6 +29,36 @@ import UserManagement from './Screens/User Management/UserManagement'
 
 
 class TrainingCampApp extends Component{
+
+	componentDidMount() {
+		
+	
+		AppState.addEventListener('change', this.handleAppStateChange);
+	}
+	componentWillUnmount() {
+   		AppState.removeEventListener('change', this._handleAppStateChange);
+  	}	
+
+	handleAppStateChange(appState) {
+		if (appState == 'background') {
+			console.log("in background");
+		
+		var PushNotification = require('react-native-push-notification');
+			
+		PushNotification.configure({
+			onNotification: function(notification) {
+				console.log( 'NOTIFICATION:', notification );
+			},
+		});
+		let date = new Date(Date.now());
+		PushNotification.localNotificationSchedule({
+        message: "My Notification Message",
+        date,
+      });
+
+
+		}
+	}
 
 	_renderScene(route, nav) {
 		switch (route.screen) {

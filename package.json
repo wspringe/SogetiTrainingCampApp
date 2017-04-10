@@ -16,7 +16,9 @@
     "react-native-lock": "^0.4.0",
     "react-native-navbar": "^1.5.4",
     "react-native-notifications": "^1.1.9",
-    "react-native-tableview-simple": "^0.16.3"
+    "react-native-push-notification": "^2.2.1",
+    "react-native-tableview-simple": "^0.16.3",
+    "whatwg-fetch": "^1.0.0"
   },
   "jest": {
     "preset": "jest-react-native"
