@@ -21,15 +21,21 @@ export default class EventDetails extends Component {
     };
 
     render() {
+        var rightButtonConfig = {
+            title: ""
+        }
+
         const titleConfig = {
             title: 'Event Details',
             color: "black"
         }
 
-        const rightButtonConfig = {
-            title: "Edit",
-            color: "white",
-            handler: () => this.props.navigator.push({ screen: 'EditEvent' })
+        if (this.props.role == "admin") {
+            rightButtonConfig = {
+                title: "Edit",
+                color: "white",
+                handler: () => this.props.navigator.push({ screen: 'EditEvent' })
+            }
         }
         return(
             <View style={{ flex: 1, }}>

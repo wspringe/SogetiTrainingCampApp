@@ -13,6 +13,7 @@ import Drawer from 'react-native-drawer';
 import ControlPanel from '../Control Panels/ControlPanel';
 import NavigationBar from 'react-native-navbar';
 import MenuIcon from '../../Icons JS/MenuIcon';
+var role = ""
 
 export default class MainMenu extends Component {
   componentWillMount() {
@@ -28,9 +29,11 @@ export default class MainMenu extends Component {
     if(this.props.profile != null) {
     if(domain == "admin.com") {
       this.props.profile.roles = "admin"
+      role = this.props.profile.roles
     }
     else {
       this.props.profile.roles = "user"
+      role = this.props.profile.roles
     }
   }
   }
@@ -57,28 +60,38 @@ export default class MainMenu extends Component {
   };
 
   _goToDetails = () => {
-    this.props.navigator.push({ screen: 'EventDetails' })
+    this.props.navigator.push({ screen: 'EventDetails' ,
+    passProps: {
+        role: role
+      }
+    })
   };
 
   render() {
+    var rightButtonConfig = {
+      title: ""
+    }
     const titleConfig = {
       title: 'Events',
       backgroundColor: 'orange',
     };
 
-    const rightButtonConfig = {
-      title: 'Add',
-      handler: () => this.props.navigator.push({ screen: 'AddEvent'})
-    }
 
     if (this.props.profile != null)
     {
       var name = this.props.profile.name
-      var role = this.props.profile.roles
+      role = this.props.profile.roles
     }
     else {
       var name = this.props.name
-      var role = this.props.role
+      role = this.props.role
+    }
+
+    if (role == "admin") {
+      rightButtonConfig = {
+      title: 'Add',
+      handler: () => this.props.navigator.push({ screen: 'AddEvent'})
+      }
     }
 
     return (

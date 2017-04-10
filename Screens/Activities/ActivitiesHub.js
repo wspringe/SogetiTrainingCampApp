@@ -37,18 +37,26 @@ export default class ActivitiesHub extends Component {
   };
 
   _goToDetails = () => {
-    this.props.navigator.push({ screen: 'ActivityDetails' })
+    this.props.navigator.push({ screen: 'ActivityDetails' , 
+    passProps: {role: this.props.role }
+    })
   };
 
   render() {
+    var rightButtonConfig = {
+      title: ""
+    }
+
     const titleConfig = {
       title: 'Activities',
       backgroundColor: 'orange',
     };
 
-    const rightButtonConfig = {
-      title: 'Add',
-      handler: () => this.props.navigator.push({ screen: 'AddActivity'})
+    if(this.props.role == "admin") {
+      rightButtonConfig = {
+        title: 'Add',
+        handler: () => this.props.navigator.push({ screen: 'AddActivity'})
+      }
     }
 
     return (

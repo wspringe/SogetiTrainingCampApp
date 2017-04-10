@@ -21,15 +21,21 @@ export default class ActivityDetails extends Component {
     };
 
     render() {
+        var rightButtonConfig = {
+            title: ""
+        }
+
         const titleConfig = {
             title: 'Activity Details',
             color: "black"
         }
 
-        const rightButtonConfig = {
-            title: "Edit",
-            color: "white",
-            handler: () => this.props.navigator.push({ screen: 'EditActivity' })
+        if (this.props.role == "admin") {
+            rightButtonConfig = {
+                title: "Edit",
+                color: "white",
+                handler: () => this.props.navigator.push({ screen: 'EditActivity' })
+            }
         }
         return(
             <View style={{ flex: 1, }}>
