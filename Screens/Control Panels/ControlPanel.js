@@ -21,6 +21,25 @@ export default class ControlPanelAdmin extends Component {
       console.log("Click!");
   }
 
+  _goToActivities() {
+    this.props.navigator.push({screen: 'ActivitiesHub', 
+    passProps: {name: this.props.name, role: this.props.role} })
+  }
+
+  _goToEventsMenu() {
+    this.props.navigator.push({screen: 'MainMenu', 
+    passProps: {name: this.props.name, role: this.props.role} })
+  }
+
+  _goToViewSurveys() {
+    this.props.navigator.push({screen: 'ViewSurveys', 
+    passProps: {name: this.props.name, role: this.props.role} })
+  }
+
+  _goToUserManagement() {
+    this.props.navigator.push({screen: 'UserManagement'})
+  }
+
   testRender() {
     //use String to cast prop to a string
     let role = String(this.props.role)
@@ -33,41 +52,32 @@ export default class ControlPanelAdmin extends Component {
                 underlayColor='gray'>
                   <View style={styles.menuOptionContainer}>
                     <Text style={styles.menuText}>
-                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Event Management
-                    </Text>
-                  </View>
-                </TouchableHighlight>
-
-                <TouchableHighlight 
-                onPress={this._test.bind(this)}
-                underlayColor='gray'>
-                  <View style={styles.menuOptionContainer}>
-                    <Text style={styles.menuText}>
-                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Manage Users
-                    </Text>
-                  </View>
-                </TouchableHighlight>
-
-                <TouchableHighlight 
-                onPress={this._test.bind(this)}
-                underlayColor='gray'>
-                  <View style={styles.menuOptionContainer}>
-                    <Text style={styles.menuText}>
-                      <Image style={styles.image} source={require('../../Resources/events.png')} />   User Roles
-                    </Text>
-                  </View>
-                </TouchableHighlight>
-
-                <TouchableHighlight 
-                onPress={this._test.bind(this)}
-                underlayColor='gray'>
-                  <View style={styles.menuOptionContainer}>
-                    <Text style={styles.menuText}>
                       <Image style={styles.image} source={require('../../Resources/events.png')} />   Push Notifications
                     </Text>
                   </View>
                 </TouchableHighlight>
-              </View>
+
+              <TouchableHighlight
+              onPress={this._goToViewSurveys.bind(this)}
+              underlayColor='gray'>
+                <View style={styles.menuOptionContainer}>
+                  <Text style={styles.menuText}>
+                    <Image style={styles.image} source={require('../../Resources/events.png')} />   View Surveys
+                  </Text>
+               </View>
+            </TouchableHighlight>
+
+            <TouchableHighlight
+              onPress={this._goToViewSurveys.bind(this)}
+              underlayColor='gray'>
+                <View style={styles.menuOptionContainer}>
+                  <Text style={styles.menuText}>
+                    <Image style={styles.image} source={require('../../Resources/events.png')} />   User Management
+                  </Text>
+               </View>
+            </TouchableHighlight>
+          </View>
+
       case "presenter":
         return <View style={styles.second}>
                 <TouchableHighlight 
@@ -75,21 +85,21 @@ export default class ControlPanelAdmin extends Component {
                 underlayColor='gray'>
                   <View style={styles.menuOptionContainer}>
                     <Text style={styles.menuText}>
-                      <Image style={styles.image} source={require('../../Resources/events.png')} />   Event Management
-                    </Text>
-                  </View>
-                </TouchableHighlight>
-
-                <TouchableHighlight 
-                onPress={this._test.bind(this)}
-                underlayColor='gray'>
-                  <View style={styles.menuOptionContainer}>
-                    <Text style={styles.menuText}>
                       <Image style={styles.image} source={require('../../Resources/events.png')} />   Push Notifications
                     </Text>
                   </View>
                 </TouchableHighlight>
-              </View>
+
+              <TouchableHighlight 
+              onPress={this._goToViewSurveys.bind(this)}
+              underlayColor='gray'>
+                <View style={styles.menuOptionContainer}>
+                  <Text style={styles.menuText}>
+                    <Image style={styles.image} source={require('../../Resources/events.png')} />   View Surveys
+                  </Text>
+                </View>
+              </TouchableHighlight>
+            </View>
       default:
         return <View></View>
     }
@@ -107,7 +117,7 @@ export default class ControlPanelAdmin extends Component {
           </View>
           <View style={styles.first}>
             <TouchableHighlight 
-            onPress={this._test.bind(this)}
+            onPress={this._goToEventsMenu.bind(this)}
             underlayColor='gray'>
               <View style={styles.menuOptionContainer}>
                 <Text style={styles.menuText}>
@@ -117,17 +127,7 @@ export default class ControlPanelAdmin extends Component {
             </TouchableHighlight>
 
             <TouchableHighlight 
-            onPress={this._test.bind(this)}
-            underlayColor='gray'>
-              <View style={styles.menuOptionContainer}>
-                <Text style={styles.menuText}>
-                  <Image style={styles.image} source={require('../../Resources/events.png')} />   Surveys
-                </Text>
-              </View>
-            </TouchableHighlight>
-
-            <TouchableHighlight 
-            onPress={this._test.bind(this)}
+            onPress={this._goToActivities.bind(this)}
             underlayColor='gray'>
               <View style={styles.menuOptionContainer}>
                 <Text style={styles.menuText}>
@@ -145,6 +145,31 @@ export default class ControlPanelAdmin extends Component {
                 </Text>
               </View>
             </TouchableHighlight>
+
+            {/* this is for testing purposes only - to be removed */}
+            <TouchableHighlight 
+              onPress={this._goToViewSurveys.bind(this)}
+              underlayColor='gray'>
+                <View style={styles.menuOptionContainer}>
+                  <Text style={styles.menuText}>
+                    <Image style={styles.image} source={require('../../Resources/events.png')} />   View Surveys
+                  </Text>
+                </View>
+              </TouchableHighlight>
+            {/* delete above */}
+
+            {/* this is for testing purposes only - to be removed */}
+            <TouchableHighlight 
+              onPress={this._goToUserManagement.bind(this)}
+              underlayColor='gray'>
+                <View style={styles.menuOptionContainer}>
+                  <Text style={styles.menuText}>
+                    <Image style={styles.image} source={require('../../Resources/events.png')} />   User Management
+                  </Text>
+                </View>
+              </TouchableHighlight>
+            {/* delete above */}
+            
             </View>
 
             { this.testRender() }

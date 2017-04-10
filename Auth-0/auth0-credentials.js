@@ -1,4 +1,4 @@
 module.exports = {
-    clientId: '',
-    domain: ''
+    clientId: 'iZMvkIuQyxEPRJkr7gYNYjAwwXuqfOdD',
+    domain: 'sergoh.auth0.com'
 };

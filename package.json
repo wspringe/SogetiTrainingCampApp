@@ -7,12 +7,18 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "15.3.2",
-    "react-native": "^0.39.2",
+    "react": "^15.4.2",
+    "react-native": "^0.41.2",
+    "react-native-autogrow-textinput": "^3.0.1",
     "react-native-azure-ad": "^0.2.0",
     "react-native-drawer": "^2.3.0",
+    "react-native-keyboard-aware-scrollview": "^1.1.5",
     "react-native-lock": "^0.4.0",
-    "react-native-navbar": "^1.5.4"
+    "react-native-navbar": "^1.5.4",
+    "react-native-notifications": "^1.1.9",
+    "react-native-push-notification": "^2.2.1",
+    "react-native-tableview-simple": "^0.16.3",
+    "whatwg-fetch": "^1.0.0"
   },
   "jest": {
     "preset": "jest-react-native"

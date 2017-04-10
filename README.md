@@ -8,6 +8,8 @@ Current required packages:
 * react-native-lock
 * react-native-drawer
 * react-native-navbar
+* react-native-tableview-simple
+* react-native-keyboard-aware-scrollview
 
 **Setting up the project on your machine locally**  
 1. `git init`  

@@ -8,12 +8,36 @@ import {
   Navigator, 
   ScrollView 
 } from 'react-native';
+
 import Drawer from 'react-native-drawer';
 import ControlPanel from '../Control Panels/ControlPanel';
 import NavigationBar from 'react-native-navbar';
 import MenuIcon from '../../Icons JS/MenuIcon';
+var role = ""
 
 export default class MainMenu extends Component {
+  componentWillMount() {
+    if(this.props.profile != null)
+    {
+      var email = this.props.profile.name
+    }
+    else {
+      var email = this.props.name
+    }
+    var domain = email.substring(email.lastIndexOf("@") +1)
+    console.log(domain)
+    if(this.props.profile != null) {
+    if(domain == "admin.com") {
+      this.props.profile.roles = "admin"
+      role = this.props.profile.roles
+    }
+    else {
+      this.props.profile.roles = "user"
+      role = this.props.profile.roles
+    }
+  }
+  }
+
   static contextTypes = {
     drawer: React.PropTypes.object
   };
@@ -36,18 +60,38 @@ export default class MainMenu extends Component {
   };
 
   _goToDetails = () => {
-    this.props.navigator.push({ screen: 'EventDetails' })
+    this.props.navigator.push({ screen: 'EventDetails' ,
+    passProps: {
+        role: role
+      }
+    })
   };
 
   render() {
+    var rightButtonConfig = {
+      title: ""
+    }
     const titleConfig = {
       title: 'Events',
       backgroundColor: 'orange',
     };
 
-    const rightButtonConfig = {
+
+    if (this.props.profile != null)
+    {
+      var name = this.props.profile.name
+      role = this.props.profile.roles
+    }
+    else {
+      var name = this.props.name
+      role = this.props.role
+    }
+
+    if (role == "admin") {
+      rightButtonConfig = {
       title: 'Add',
       handler: () => this.props.navigator.push({ screen: 'AddEvent'})
+      }
     }
 
     return (
@@ -56,7 +100,7 @@ export default class MainMenu extends Component {
         type="overlay"
         //This is where menu goes on sidebar with props passing to ControlPanel
         content={
-          <ControlPanel closeDrawer={this.closeDrawer} name={this.props.profile.name} avatar={this.props.profile.picture} role={this.props.profile.roles} currentPlace={"events"} />
+          <ControlPanel closeDrawer={this.closeDrawer} name={name} navigator={this.props.navigator} role={role} />
         }
         tapToClose={true}
         styles={{main: {shadowColor: '#000', shadowOpacity: 0.5, shadowRadius: 15}}}
@@ -137,7 +181,7 @@ export default class MainMenu extends Component {
           </View>
           <View style={styles.hintTextContainer}>
             <Text style={styles.hintText}>Press the 3 horizontal black lines to open the menu!</Text>
-            <Text style={styles.hintText}>{this.props.profile.roles}</Text>
+            <Text style={styles.hintText}></Text>
           </View>
         </ScrollView>
         

@@ -9,12 +9,22 @@ import {
 	TouchableOpacity,
 } from 'react-native';
 
-import EventsMenu from './Screens/Events/EventsMenu';
-import SplashScreen from './Screens/SplashScreen';
-import EventDetails from './Screens/Events/EventDetails';
-import SubmitSurvey from './Screens/Surveys/SubmitSurvey';
+import SplashScreen from './Screens/SplashScreen'
+
+import EventsMenu from './Screens/Events/EventsMenu'
+import EventDetails from './Screens/Events/EventDetails'
 import EditEvent from './Screens/Events/EditEvent'
 import AddEvent from './Screens/Events/AddEvent'
+
+import ActivityHub from './Screens/Activities/ActivitiesHub'
+import AddActivity from './Screens/Activities/AddActivity'
+import EditActivity from './Screens/Activities/EditActivity'
+import ActivityDetails from './Screens/Activities/ActivityDetails'
+
+import SubmitSurvey from './Screens/Surveys/SubmitSurvey'
+import ViewSurveys from './Screens/Surveys/ViewSurveys'
+import UserManagement from './Screens/User Management/UserManagement'
+
 
 class TrainingCampApp extends Component{
 
@@ -33,6 +43,18 @@ class TrainingCampApp extends Component{
 				return <EditEvent navigator={nav} {...route.passProps} />
 			case "AddEvent":
 				return <AddEvent navigator={nav} {...route.passProps} />
+			case "ActivitiesHub":
+				return <ActivityHub navigator={nav} {...route.passProps} />
+			case "AddActivity":
+				return <AddActivity navigator={nav} {...route.passProps} />
+			case "EditActivity":
+				return <EditActivity navigator={nav} {...route.passProps} />
+			case "ActivityDetails":
+				return <ActivityDetails navigator={nav} {...route.passProps} />
+			case "ViewSurveys":
+				return <ViewSurveys navigator={nav} {...route.passProps} />
+			case "UserManagement":
+				return <UserManagement navigator={nav} {...route.passProps} />
 		}
 	}
   render() {
