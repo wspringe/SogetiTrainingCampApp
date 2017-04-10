@@ -15,6 +15,26 @@ import NavigationBar from 'react-native-navbar';
 import MenuIcon from '../../Icons JS/MenuIcon';
 
 export default class MainMenu extends Component {
+  componentWillMount() {
+    if(this.props.profile != null)
+    {
+      var email = this.props.profile.name
+    }
+    else {
+      var email = this.props.name
+    }
+    var domain = email.substring(email.lastIndexOf("@") +1)
+    console.log(domain)
+    if(this.props.profile != null) {
+    if(domain == "admin.com") {
+      this.props.profile.roles = "admin"
+    }
+    else {
+      this.props.profile.roles = "user"
+    }
+  }
+  }
+
   static contextTypes = {
     drawer: React.PropTypes.object
   };
