@@ -23,18 +23,21 @@ import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
 var newEvent = {};
 
+
+
 export default class AddEvent extends Component {
   //var newEvent;
   
   
   createEvent() {
+    console.log("to send" + JSON.stringify(newEvent));
     fetch('http://forums.swirlclinic.com:1337/api/events', {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
       },
-      body: newEvent
+      body: JSON.stringify(newEvent)
     })
   }
   

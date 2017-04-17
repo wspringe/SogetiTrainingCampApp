@@ -119,7 +119,7 @@ export default class MainMenu extends Component {
       }
     }
 
-    this.loadJsonData();
+    
   }
 
   static contextTypes = {
@@ -153,6 +153,7 @@ export default class MainMenu extends Component {
   };
 
   render() {
+    this.loadJsonData();
     //exampleArray = this.state.eventData;
     var myEvents = [];
     var finishedEvents = [];
