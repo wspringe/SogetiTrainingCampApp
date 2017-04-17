@@ -43,6 +43,8 @@ export default class SplashScreen extends Component{
       .catch((error) => {
         console.error(error);
       });
+
+     
   }
 
   render() {

@@ -33,10 +33,10 @@ class TrainingCampApp extends Component{
 	componentDidMount() {
 		
 	
-		AppState.addEventListener('change', this.handleAppStateChange);
+		//AppState.addEventListener('change', this.handleAppStateChange);
 	}
 	componentWillUnmount() {
-   		AppState.removeEventListener('change', this._handleAppStateChange);
+   		//AppState.removeEventListener('change', this._handleAppStateChange);
   	}	
 
 	handleAppStateChange(appState) {

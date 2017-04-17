@@ -15,27 +15,111 @@ import NavigationBar from 'react-native-navbar';
 import MenuIcon from '../../Icons JS/MenuIcon';
 var role = ""
 
-export default class MainMenu extends Component {
-  componentWillMount() {
-    if(this.props.profile != null)
-    {
-      var email = this.props.profile.name
-    }
-    else {
-      var email = this.props.name
-    }
-    var domain = email.substring(email.lastIndexOf("@") +1)
-    console.log(domain)
-    if(this.props.profile != null) {
-    if(domain == "admin.com") {
-      this.props.profile.roles = "admin"
-      role = this.props.profile.roles
-    }
-    else {
-      this.props.profile.roles = "user"
-      role = this.props.profile.roles
-    }
+var exampleArray = [
+  {
+    "_id": "58c3b01a79d78446289a013c",
+    "Start_Time": "8:00 AM",
+    "End_Time": "9:00 AM",
+    "Host": "Joe",
+    "name": "Event 1",
+    "description": "This is Event 1! Welcome to the first course",
+    "upcoming": true
+  },
+  {
+    "_id": "58c3ba2479d78446289a013d",
+    "Start_Time": "8:00 AM",
+    "End_Time": "9:00 AM",
+    "Host": "Joe",
+    "name": "Event 2",
+    "description": "This is Event 2! Welcome to the second course",
+    "upcoming": true
+  },
+  {
+    "_id": "58c3ba4679d78446289a013e",
+    "Start_Time": "8:00 AM",
+    "End_Time": "9:00 AM",
+    "Host": "Joe",
+    "name": "Event 3",
+    "description": "This is Event 3! Welcome to the third course",
+    "upcoming": true
+  },
+  {
+    "_id": "58c3ba5b79d78446289a013f",
+    "Start_Time": "8:00 AM",
+    "End_Time": "9:00 AM",
+    "Host": "Joe",
+    "name": "Event 4",
+    "description": "This is Event 4! Welcome to the fourth course",
+    "upcoming": false
+  },
+  {
+    "_id": "58c5b177b2e8ac0d6020cf4a",
+    "Start_Time": "4:00 PM",
+    "End_Time": "5:00 PM",
+    "Host": "Gary",
+    "name": "Event 5",
+    "description": "This is Event 5! Wow 5 events already!",
+    "upcoming": true
+  },
+  {
+    "_id": "58c630f07e57980448a715bd",
+    "Start_Time": "7:00 AM",
+    "End_Time": "8:00 AM",
+    "Host": "Rose",
+    "name": "Event 6",
+    "description": "This is Event 6! CHOCOLATE MILK",
+    "upcoming": false
+  },
+  {
+    "_id": "58c6312c7e57980448a715be",
+    "Start_Time": "11:00 AM",
+    "End_Time": "12:00 PM",
+    "Host": "Billy",
+    "name": "Event 7",
+    "description": "This is Event 7. The cake is a lie.",
+    "upcoming": true
   }
+];
+  
+
+
+export default class MainMenu extends Component {
+  loadJsonData() {
+    fetch('http://forums.swirlclinic.com:1337/api/events')
+     .then((response) => response.json())
+      .then((responseJson) => {
+        exampleArray = responseJson;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+  
+
+  componentWillMount() {
+      
+      if(this.props.profile != null)
+      {
+        var email = this.props.profile.name
+      }
+      else {
+        var email = this.props.name
+      }
+      var domain = email.substring(email.lastIndexOf("@") +1)
+      console.log(domain)
+      if(this.props.profile != null) {
+      if(domain == "admin.com") {
+        this.props.profile.roles = "admin"
+        role = this.props.profile.roles
+      }
+      else {
+        this.props.profile.roles = "user"
+        role = this.props.profile.roles
+      }
+    }
+
+    this.loadJsonData();
   }
 
   static contextTypes = {
@@ -59,39 +143,45 @@ export default class MainMenu extends Component {
   	this.props.navigator.push({ screen: 'SplashScreen' });
   };
 
-  _goToDetails = () => {
+  _goToDetails = (theEvent, undefined) => {
     this.props.navigator.push({ screen: 'EventDetails' ,
     passProps: {
+        event: theEvent,
         role: role
       }
     })
   };
 
   render() {
-    var rightButtonConfig = {
-      title: ""
+    //exampleArray = this.state.eventData;
+    var myEvents = [];
+    var finishedEvents = [];
+    for (let i = 0; i < exampleArray.length; i++) {
+          myEvents.push(<View style={styles.listTextContainer}>
+                        <TouchableOpacity onPress={this._goToDetails.bind(this, exampleArray[i])}>
+                          <Text> {exampleArray[i].name} </Text>
+                        </TouchableOpacity>
+                      </View>);
     }
+
     const titleConfig = {
       title: 'Events',
       backgroundColor: 'orange',
     };
 
+    const rightButtonConfig = {
+      title: 'Add',
+      handler: () => this.props.navigator.push({ screen: 'AddEvent'})
+    }
 
     if (this.props.profile != null)
     {
       var name = this.props.profile.name
-      role = this.props.profile.roles
+      var role = this.props.profile.roles
     }
     else {
       var name = this.props.name
-      role = this.props.role
-    }
-
-    if (role == "admin") {
-      rightButtonConfig = {
-      title: 'Add',
-      handler: () => this.props.navigator.push({ screen: 'AddEvent'})
-      }
+      var role = this.props.role
     }
 
     return (
@@ -151,34 +241,13 @@ export default class MainMenu extends Component {
           <View style={styles.upcomingEventTextContainer}>
             <Text style={styles.categoryText}>  Upcoming Events</Text>
           </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Next Event</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Later Event</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Last Event</Text>
-            </TouchableOpacity>
-          </View>
+
+          {myEvents}
           <View style={styles.pastEventsTextContainer}>
             <Text style={styles.categoryText}>  Past Events</Text>
           </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Event 1</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Event 2</Text>
-            </TouchableOpacity>
-          </View>
+          {finishedEvents}
+
           <View style={styles.hintTextContainer}>
             <Text style={styles.hintText}>Press the 3 horizontal black lines to open the menu!</Text>
             <Text style={styles.hintText}></Text>

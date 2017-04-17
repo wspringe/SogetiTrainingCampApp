@@ -51,18 +51,16 @@ export default class EventDetails extends Component {
                 />
                 <ScrollView style={styles.container}>
                     <View style={styles.eventNameContainer}>
-                        <Text style={styles.eventName}>Event Name </Text>
+                        <Text style={styles.eventName}>{this.props.event.name}  </Text>
                     </View>
                     <View style={styles.eventTimeContainer}>
-                        <Text style={styles.eventTime}>Start Time: 8:00 AM</Text>
-                        <Text style={styles.eventTime}>End Time: 9:00 AM</Text>
-                        <Text style={styles.eventTime}>Host: Naame naaaame</Text>
+                        <Text style={styles.eventTime}>Start Time: {this.props.event.starttime}</Text>
+                        <Text style={styles.eventTime}>End Time: {this.props.event.endtime}</Text>
+                        <Text style={styles.eventTime}>Host: {this.props.event.host}</Text>
                     </View>
                     <Text>Description:</Text>
                     <View style={styles.descriptionBodyContainer}>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec mattis sodales porttitor. Suspendisse in mauris ante. 
-                        Nam eget odio diam. Etiam faucibus scelerisque purus, in accumsan felis semper ut.</Text>
+                        <Text>{this.props.event.description}</Text>
                     </View>
                     <TouchableOpacity 
                     style={styles.surveyButton}

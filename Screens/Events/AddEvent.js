@@ -21,7 +21,24 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview'
 import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
+var newEvent;
+
 export default class AddEvent extends Component {
+  //var newEvent;
+  
+  /*
+  createEvent() {
+    method: 'POST',
+    body: JSON.stringify({
+      name: 'yourValue',
+      description: 'yourOtherValue',
+      date: '',
+      starttime,
+      endtime
+    })
+  }
+  */
+
   render() {
     const rightButtonConfig = {
       title: 'Save',
@@ -94,7 +111,7 @@ export default class AddEvent extends Component {
             tintColor='orange'
           /> 
           <KeyboardAwareScrollView>
-            <TableView>
+            <TableView onPress={(event) => console.log(event)}>
               <Section>
                 <CellEdit title="Event Name: " placeholder="Event Name" />
                 <CellEdit title="Current Time: " placeholder="Current Time" />
