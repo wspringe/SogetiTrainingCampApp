@@ -94,7 +94,7 @@ class TrainingCampApp extends Component{
     return (
         <Navigator
         	//initialRoute={{screen: 'SplashScreen'}}
-			initialRoute={{screen: 'MainMenu'}}
+			initialRoute={{screen: 'SplashScreen'}}
         	renderScene={(route, nav) => {return this._renderScene(route, nav)}}
         	configureScene={() => ({
         		...Navigator.SceneConfigs.FloatFromLeft,
