@@ -15,10 +15,25 @@ import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
 export default class ActivityDetails extends Component {
-    _goToSubmitSurvey = () => {
+
+    _goToSubmitSurvey = (theEvent) => {
         console.log('click!')
-        this.props.navigator.push({screen: 'SubmitSurvey'})
-    };
+        this.props.navigator.push({ screen: 'SubmitSurvey' ,
+    passProps: {
+        event: theEvent,
+        typeDetails: 1
+      }
+    })
+};
+
+_EditEvent = (theEvent) => {
+        console.log('click!')
+        this.props.navigator.push({ screen: 'EditActivity' ,
+    passProps: {
+        event: theEvent
+      }
+    })
+};
 
     render() {
         var rightButtonConfig = {
@@ -30,11 +45,11 @@ export default class ActivityDetails extends Component {
             color: "black"
         }
 
-        if (this.props.role == "admin") {
+        if (this.props.role != "admin") {
             rightButtonConfig = {
                 title: "Edit",
                 color: "white",
-                handler: () => this.props.navigator.push({ screen: 'EditActivity' })
+                handler: this._EditEvent.bind(this, this.props.event)
             }
         }
         return(
@@ -51,23 +66,22 @@ export default class ActivityDetails extends Component {
                 />
                 <ScrollView style={styles.container}>
                     <View style={styles.eventNameContainer}>
-                        <Text style={styles.eventName}>Activity Name </Text>
+                        <Text style={styles.eventName}>Activity: {this.props.event.name}  </Text>
                     </View>
                     <View style={styles.eventTimeContainer}>
-                        <Text style={styles.eventTime}>Start Time: 8:00 AM</Text>
-                        <Text style={styles.eventTime}>End Time: 9:00 AM</Text>
-                        <Text style={styles.eventTime}>Host: Naame naaaame</Text>
+                        <Text style={styles.eventTime}>Date: {this.props.event.date}</Text>
+                        <Text style={styles.eventTime}>Start Time: {this.props.event.starttime}</Text>
+                        <Text style={styles.eventTime}>End Time: {this.props.event.endtime}</Text>
+                        <Text style={styles.eventTime}>Host: {this.props.event.host}</Text>
                     </View>
                     <Text>Description:</Text>
                     <View style={styles.descriptionBodyContainer}>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec mattis sodales porttitor. Suspendisse in mauris ante. 
-                        Nam eget odio diam. Etiam faucibus scelerisque purus, in accumsan felis semper ut.</Text>
+                        <Text>{this.props.event.description}</Text>
                     </View>
                     <TouchableOpacity 
                     style={styles.surveyButton}
                     underlayColor='#949494'
-                    onPress={this._goToSubmitSurvey.bind(this)} >
+                    onPress={this._goToSubmitSurvey.bind(this, this.props.event)} >
                         <Text style={{fontWeight: 'bold'}}>WRITE SURVEY</Text>
                     </TouchableOpacity>
                 </ScrollView>

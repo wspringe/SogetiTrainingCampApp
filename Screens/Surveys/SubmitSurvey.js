@@ -19,6 +19,7 @@ export default class SubmitSurvey extends Component {
 
 answerSurvey() {
   newSurvey.eventid = this.props.event.id;
+  newSurvey.type = this.props.typeDetails;
     console.log("to send" + JSON.stringify(newSurvey));
     fetch('https://forums.swirlclinic.com:1337/api/surveys', {
       method: 'POST',
@@ -71,7 +72,7 @@ render() {
       />
       <ScrollView style={styles.container}>
         <View style={{ paddingBottom: 5, }}>
-          <Text style={styles.eventNameText}>Event: {this.props.event.name}</Text>
+          <Text style={styles.eventNameText}>Survey for {this.props.event.name}</Text>
         </View>
         <View style={{ paddingBottom: 5, }}>
           <Text>Survey: </Text>

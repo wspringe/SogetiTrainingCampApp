@@ -13,7 +13,59 @@ import ControlPanel from '../Control Panels/ControlPanel';
 import NavigationBar from 'react-native-navbar';
 import MenuIcon from '../../Icons JS/MenuIcon';
 
+var role = ""
+
+var didLoad;
+
+var date = new Date();
+
 export default class ActivitiesHub extends Component {
+  loadJsonData() {
+    fetch('https://forums.swirlclinic.com:1337/api/activities')
+     .then((response) => response.json())
+      .then((responseJson) => {
+        exampleArray = responseJson;
+        this.setState({
+          isLoading: false
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+  
+  componentWillMount() {
+      this.loadJsonData();
+      
+      if(this.props.profile != null)
+      {
+        var email = this.props.profile.name
+      }
+      else {
+        //var email = this.props.name
+        var email = "Test@gmail.com";
+        
+      }
+      console.log(email);
+      var domain = email.substring(email.lastIndexOf("@") +1)
+      console.log(domain)
+      if(this.props.profile != null) {
+      if(domain == "admin.com") {
+        this.props.profile.roles = "admin";
+        role = this.props.profile.roles;
+      }
+      else {
+        this.props.profile.roles = "user";
+        role = this.props.profile.roles;
+      }
+
+      //Hardcode role since auth is broken.
+      this.props.profile.roles = "admin";
+    }
+
+    
+  }
+
   static contextTypes = {
     drawer: React.PropTypes.object
   };
@@ -21,6 +73,7 @@ export default class ActivitiesHub extends Component {
   state={
     drawerOpen: false,
     drawerDisabled: false,
+    isLoading: true
   };
   closeDrawer = () => {
     this._drawer.close()
@@ -36,13 +89,62 @@ export default class ActivitiesHub extends Component {
   	this.props.navigator.pop()
   };
 
-  _goToDetails = () => {
-    this.props.navigator.push({ screen: 'ActivityDetails' , 
-    passProps: {role: this.props.role }
+  _goToDetails = (theEvent, undefined) => {
+    this.props.navigator.push({ screen: 'ActivityDetails' ,
+    passProps: {
+        event: theEvent,
+        role: role
+      }
     })
   };
 
   render() {
+    if(this.state.isLoading) {
+      return <View><Text>Loading...</Text></View>;
+    }
+
+    var myActivities = [];
+    var finishedActivities = [];
+    for (let i = 0; i < exampleArray.length; i++) {
+      
+         // var tempdate = ;
+
+          //exampleArray[i].date = tempdate.slice(0,4);
+
+
+          var year = String(exampleArray[i].date).slice(0,4);
+          var month = String(exampleArray[i].date).slice(5,7);
+          var day = String(exampleArray[i].date).slice(8,10);
+
+          var compareDate = new Date(year,month,day);
+          
+
+
+          //if (date.getFullYear)
+          exampleArray[i].date = year + "-" + month + "-" + day;
+
+          console.log(date.getUTCDate());
+          console.log(compareDate.getUTCDate());
+
+          if (date.getUTCDate() > compareDate.getUTCDate()) {
+            
+             finishedActivities.push(<View style={styles.listTextContainer}>
+                        <TouchableOpacity onPress={this._goToDetails.bind(this, exampleArray[i])}>
+                          <Text> {exampleArray[i].name} </Text>
+                        </TouchableOpacity>
+                      </View>);
+          }
+          else {
+              myActivities.push(<View style={styles.listTextContainer}>
+                        <TouchableOpacity onPress={this._goToDetails.bind(this, exampleArray[i])}>
+                          <Text> {exampleArray[i].name} </Text>
+                        </TouchableOpacity>
+                      </View>);
+          }
+
+         
+    }
+
     var rightButtonConfig = {
       title: ""
     }
@@ -52,7 +154,7 @@ export default class ActivitiesHub extends Component {
       backgroundColor: 'orange',
     };
 
-    if(this.props.role == "admin") {
+    if(this.props.role != "admin") {
       rightButtonConfig = {
         title: 'Add',
         handler: () => this.props.navigator.push({ screen: 'AddActivity'})
@@ -60,6 +162,10 @@ export default class ActivitiesHub extends Component {
     }
 
     return (
+
+      
+      
+
       <Drawer
         ref={(ref) => this._drawer = ref}
         type="overlay"
@@ -116,34 +222,15 @@ export default class ActivitiesHub extends Component {
           <View style={styles.upcomingEventTextContainer}>
             <Text style={styles.categoryText}>  Upcoming Activities</Text>
           </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Next Activity</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Later Activity</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Last Activity</Text>
-            </TouchableOpacity>
-          </View>
+          
+          {myActivities}
+
           <View style={styles.pastEventsTextContainer}>
             <Text style={styles.categoryText}>  Past Activities</Text>
           </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Activity 1</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.listTextContainer}>
-            <TouchableOpacity onPress={this._goToDetails.bind(this)}>
-              <Text>      Activity 2</Text>
-            </TouchableOpacity>
-          </View>
+          
+          {finishedActivities}
+
           <View style={styles.hintTextContainer}>
             <Text style={styles.hintText}>Press the 3 horizontal black lines to open the menu!</Text>
             <Text style={styles.hintText}></Text>

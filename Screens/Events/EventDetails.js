@@ -19,7 +19,8 @@ export default class EventDetails extends Component {
         console.log('click!')
         this.props.navigator.push({ screen: 'SubmitSurvey' ,
     passProps: {
-        event: theEvent
+        event: theEvent,
+        typeDetails: 0
       }
     })
 };

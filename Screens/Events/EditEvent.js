@@ -98,7 +98,7 @@ export default class EditEvent extends Component {
     const rightButtonConfig = {
       title: 'Save',
       color: 'white',
-      handler: () => { alert('Saved')
+      handler: () => { 
                        this.editEvent() }
     }
     const titleConfig = {

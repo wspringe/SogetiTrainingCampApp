@@ -52,14 +52,28 @@ state={
 
     var mySurveys = [];
     for (let i = 0; i < exampleArray.length; i++) {
-          mySurveys.push(<View style={styles.listTextContainer}>
+          if (exampleArray[i].type == 0) { //THis is an event
+            mySurveys.push(<View style={styles.listTextContainer}>
                         <TouchableOpacity>
                           <Text style={styles.surveyBody}> 
-                            Event ID: {exampleArray[i].eventid + "\n"}
+                            Event: {exampleArray[i].name + "\n"}
                             Feedback: {exampleArray[i].description}
                           </Text>
                         </TouchableOpacity>
                       </View>);
+          }
+          else { //an activity
+            mySurveys.push(<View style={styles.listTextContainer}>
+                        <TouchableOpacity>
+                          <Text style={styles.surveyBody}> 
+                            Activity: {exampleArray[i].name + "\n"}
+                            Feedback: {exampleArray[i].description}
+                          </Text>
+                        </TouchableOpacity>
+                      </View>);
+          }
+
+          
     }
 
       return(

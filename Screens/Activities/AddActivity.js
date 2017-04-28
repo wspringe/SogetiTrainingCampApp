@@ -21,21 +21,60 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview'
 import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
+var newEvent = {};
+
 export default class AddActivity extends Component {
+
+  createEvent() {
+    console.log("to send" + JSON.stringify(newEvent));
+    fetch('https://forums.swirlclinic.com:1337/api/activities', {
+      method: 'POST',
+      headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newEvent)
+    })
+    .then((response) => response.json())
+      .then((responseJson) => {
+        //console.log(responseJson.message);
+        if(responseJson.message == "Failure!") {
+                          alert('Failed to make activity! Please try again.');
+                        }
+                        else {
+                          alert('Successfully created activity!');
+                          this.props.navigator.push({screen: 'ActivitiesHub', passProps: {name: this.props.name, role: this.props.role} });
+
+                          newEvent = {};
+                        }
+
+        
+        
+      })
+    //return "Failure!";
+  }
+  
+  goBack(){
+this.props.navigator.push({screen: 'ActivitiesHub', 
+    passProps: {name: this.props.name, role: this.props.role} });
+}
   
   render() {
     const rightButtonConfig = {
       title: 'Save',
       color: 'white',
-      handler: () => { alert('Saved')
-                       this.props.navigator.pop() }
+      handler: () => { 
+                        var statusCall = this.createEvent();
+
+                        
+                      }
     }
     const titleConfig = {
       title: 'Add Activity',
       color: 'black'
     }
 
-    const CellEdit = (props) => (
+    const CellName = (props) => (
       <Cell
         {...props}
         cellContentView={
@@ -50,6 +89,105 @@ export default class AddActivity extends Component {
               {props.title}
             </Text>
             <TextInput
+              onChangeText={(text) => newEvent.name = text}
+              style={{width: 200}}
+              placeholder={props.placeholder}>
+            </TextInput>
+          </View>
+          }
+        />
+      );
+
+      const CellStart = (props) => (
+      <Cell
+        {...props}
+        cellContentView={
+          <View
+            style={{ alignItems: 'center', flexDirection: 'row', flex: 1, paddingVertical: 5 }}
+              >
+            <Text
+              allowFontScaling
+              numberOfLines={1}
+              style={{ flex: 1, fontSize: 20 }}
+                >
+              {props.title}
+            </Text>
+            <TextInput
+              onChangeText={(text) => newEvent.starttime = text}
+              style={{width: 200}}
+              placeholder={props.placeholder}>
+            </TextInput>
+          </View>
+          }
+        />
+      );
+
+      const CellEnd = (props) => (
+      <Cell
+        {...props}
+        cellContentView={
+          <View
+            style={{ alignItems: 'center', flexDirection: 'row', flex: 1, paddingVertical: 5 }}
+              >
+            <Text
+              allowFontScaling
+              numberOfLines={1}
+              style={{ flex: 1, fontSize: 20 }}
+                >
+              {props.title}
+            </Text>
+            <TextInput
+              onChangeText={(text) => newEvent.endtime = text}
+              style={{width: 200}}
+              placeholder={props.placeholder}>
+            </TextInput>
+          </View>
+          }
+        />
+      );
+
+      const CellDate = (props) => (
+      <Cell
+        {...props}
+        cellContentView={
+          <View
+            style={{ alignItems: 'center', flexDirection: 'row', flex: 1, paddingVertical: 5 }}
+              >
+            <Text
+              allowFontScaling
+              numberOfLines={1}
+              style={{ flex: 1, fontSize: 20 }}
+                >
+              {props.title}
+            </Text>
+            <TextInput
+              onChangeText={(text) => newEvent.date = text}
+              style={{width: 200}}
+              placeholder={props.placeholder}>
+            </TextInput>
+          </View>
+          }
+        />
+      );
+
+      
+
+      const CellHost = (props) => (
+      <Cell
+        {...props}
+        cellContentView={
+          <View
+            style={{ alignItems: 'center', flexDirection: 'row', flex: 1, paddingVertical: 5 }}
+              >
+            <Text
+              allowFontScaling
+              numberOfLines={1}
+              style={{ flex: 1, fontSize: 20 }}
+                >
+              {props.title}
+            </Text>
+            <TextInput
+              onChangeText={(text) => newEvent.host = text}
               style={{width: 200}}
               placeholder={props.placeholder}>
             </TextInput>
@@ -75,6 +213,7 @@ export default class AddActivity extends Component {
             <TextInput
               style={{width: 200, textAlignVertical: 'top', height: 100}}
               multiline={true}
+              onChangeText={(text) => newEvent.description = text}
               placeholder={props.placeholder}>
             </TextInput>
           </View>
@@ -89,23 +228,29 @@ export default class AddActivity extends Component {
             leftButton={
               <BackButtonIcon
                 style={{ marginLeft: 8, marginTop: 8 }}
-                onPress={() => this.props.navigator.pop()} />
+                
+                onPress={this.goBack.bind(this)} />
             }
             rightButton={rightButtonConfig}
             tintColor='orange'
-          />
+          /> 
           <KeyboardAwareScrollView>
             <TableView>
               <Section>
-                <CellEdit title="Activity Name: " placeholder="Activity Name" />
-                <CellEdit title="Current Time: " placeholder="Current Time" />
-                <CellEdit title="End Time: " placeholder="End Time" />
-                <CellEdit title="Host: " placeholder="Host Name" />
+                <CellName title="Activity Name: " placeholder="Event Name" />
+
+                <CellDate title="Date: " placeholder="Date" />
+                <CellStart title="Start Time: " placeholder="Start Time" />
+                <CellEnd title="End Time: " placeholder="End Time" />
+
+                <CellHost title="Host: " placeholder="Host Name" />
+                
                 <CellDescription title= "Description:" placeholder="Description..." />
               </Section>
             </TableView>
           </KeyboardAwareScrollView>
         </View>
+        
       )
   }
 }
