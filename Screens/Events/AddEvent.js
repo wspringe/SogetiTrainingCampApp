@@ -31,7 +31,7 @@ export default class AddEvent extends Component {
   
   createEvent() {
     console.log("to send" + JSON.stringify(newEvent));
-    fetch('http://forums.swirlclinic.com:1337/api/events', {
+    fetch('https://forums.swirlclinic.com:1337/api/events', {
       method: 'POST',
       headers: {
       'Accept': 'application/json',
@@ -39,7 +39,29 @@ export default class AddEvent extends Component {
       },
       body: JSON.stringify(newEvent)
     })
-  }
+    .then((response) => response.json())
+      .then((responseJson) => {
+        //console.log(responseJson.message);
+        if(responseJson.message == "Failure!") {
+                          alert('Failed to make event! Please try again.');
+                        }
+                        else {
+                          alert('Successfully created event!');
+                          this.props.navigator.push({screen: 'MainMenu', passProps: {name: this.props.name, role: this.props.role} });
+
+                          newEvent = {};
+                        }
+
+        
+        
+      })
+    //return "Failure!";
+    }
+
+goBack(){
+this.props.navigator.push({screen: 'MainMenu', 
+    passProps: {name: this.props.name, role: this.props.role} });
+}
   
 
   render() {
@@ -47,10 +69,9 @@ export default class AddEvent extends Component {
       title: 'Save',
       color: 'white',
       handler: () => { 
-                        alert('Saved');
-                        this.createEvent();
-                        console.log(newEvent);
-                       this.props.navigator.pop()
+                        var statusCall = this.createEvent();
+
+                        
                       }
     }
     const titleConfig = {
@@ -205,6 +226,8 @@ export default class AddEvent extends Component {
         />
       );
 
+
+
       return(
         <View style={{flex: 1, }}>
           <NavigationBar
@@ -212,7 +235,8 @@ export default class AddEvent extends Component {
             leftButton={
               <BackButtonIcon
                 style={{ marginLeft: 8, marginTop: 8 }}
-                onPress={() => this.props.navigator.pop()} />
+                
+                onPress={this.goBack.bind(this)} />
             }
             rightButton={rightButtonConfig}
             tintColor='orange'

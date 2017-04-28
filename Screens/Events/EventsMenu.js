@@ -9,11 +9,15 @@ import {
   ScrollView 
 } from 'react-native';
 
+
+
 import Drawer from 'react-native-drawer';
 import ControlPanel from '../Control Panels/ControlPanel';
 import NavigationBar from 'react-native-navbar';
 import MenuIcon from '../../Icons JS/MenuIcon';
 var role = ""
+
+var didLoad;
 
 var exampleArray = [
   {
@@ -81,42 +85,51 @@ var exampleArray = [
   }
 ];
   
-
+var date = new Date();
 
 export default class MainMenu extends Component {
   loadJsonData() {
-    fetch('http://forums.swirlclinic.com:1337/api/events')
+    fetch('https://forums.swirlclinic.com:1337/api/events')
      .then((response) => response.json())
       .then((responseJson) => {
         exampleArray = responseJson;
+        this.setState({
+          isLoading: false
+        });
       })
       .catch((error) => {
         console.error(error);
       });
   }
 
-  
 
   componentWillMount() {
+      this.loadJsonData();
       
       if(this.props.profile != null)
       {
         var email = this.props.profile.name
       }
       else {
-        var email = this.props.name
+        //var email = this.props.name
+        var email = "Test@gmail.com";
+        
       }
+      console.log(email);
       var domain = email.substring(email.lastIndexOf("@") +1)
       console.log(domain)
       if(this.props.profile != null) {
       if(domain == "admin.com") {
-        this.props.profile.roles = "admin"
-        role = this.props.profile.roles
+        this.props.profile.roles = "admin";
+        role = this.props.profile.roles;
       }
       else {
-        this.props.profile.roles = "user"
-        role = this.props.profile.roles
+        this.props.profile.roles = "user";
+        role = this.props.profile.roles;
       }
+
+      //Hardcode role since auth is broken.
+      this.props.profile.roles = "admin";
     }
 
     
@@ -129,6 +142,7 @@ export default class MainMenu extends Component {
   state={
     drawerOpen: false,
     drawerDisabled: false,
+    isLoading: true
   };
   closeDrawer = () => {
     this._drawer.close()
@@ -152,17 +166,54 @@ export default class MainMenu extends Component {
     })
   };
 
+
+
   render() {
-    this.loadJsonData();
+    if(this.state.isLoading) {
+      return <View><Text>Loading...</Text></View>;
+    }
+    
     //exampleArray = this.state.eventData;
     var myEvents = [];
     var finishedEvents = [];
     for (let i = 0; i < exampleArray.length; i++) {
-          myEvents.push(<View style={styles.listTextContainer}>
+      
+         // var tempdate = ;
+
+          //exampleArray[i].date = tempdate.slice(0,4);
+
+
+          var year = String(exampleArray[i].date).slice(0,4);
+          var month = String(exampleArray[i].date).slice(5,7);
+          var day = String(exampleArray[i].date).slice(8,10);
+
+          var compareDate = new Date(year,month,day);
+          
+
+
+          //if (date.getFullYear)
+          exampleArray[i].date = year + "-" + month + "-" + day;
+
+          console.log(date.getUTCDate());
+          console.log(compareDate.getUTCDate());
+
+          if (date.getUTCDate() > compareDate.getUTCDate()) {
+            finishedEvents
+             finishedEvents.push(<View style={styles.listTextContainer}>
                         <TouchableOpacity onPress={this._goToDetails.bind(this, exampleArray[i])}>
                           <Text> {exampleArray[i].name} </Text>
                         </TouchableOpacity>
                       </View>);
+          }
+          else {
+              myEvents.push(<View style={styles.listTextContainer}>
+                        <TouchableOpacity onPress={this._goToDetails.bind(this, exampleArray[i])}>
+                          <Text> {exampleArray[i].name} </Text>
+                        </TouchableOpacity>
+                      </View>);
+          }
+
+         
     }
 
     const titleConfig = {
@@ -170,9 +221,8 @@ export default class MainMenu extends Component {
       backgroundColor: 'orange',
     };
 
-    const rightButtonConfig = {
-      title: 'Add',
-      handler: () => this.props.navigator.push({ screen: 'AddEvent'})
+    rightButtonConfig = {
+      title: ""
     }
 
     if (this.props.profile != null)
@@ -183,6 +233,13 @@ export default class MainMenu extends Component {
     else {
       var name = this.props.name
       var role = this.props.role
+    }
+
+    if (role != "admin") {		
+     rightButtonConfig = {
+       title: 'Add',
+       handler: () => this.props.navigator.push({ screen: 'AddEvent'})
+     }
     }
 
     return (

@@ -13,16 +13,51 @@ import {
 import NavigationBar from 'react-native-navbar';
 import BackButtonIcon from '../../Icons JS/BackButtonIcon';
 
+var newSurvey = {};
+
 export default class SubmitSurvey extends Component {
+
+answerSurvey() {
+  newSurvey.eventid = this.props.event.id;
+    console.log("to send" + JSON.stringify(newSurvey));
+    fetch('https://forums.swirlclinic.com:1337/api/surveys', {
+      method: 'POST',
+      headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newSurvey)
+    })
+    .then((response) => response.json())
+      .then((responseJson) => {
+        //console.log(responseJson.message);
+        if(responseJson.message == "Failure!") {
+                          alert('Failed to make survey! Please try again.');
+                        }
+                        else {
+                          alert('Successfully submitted survey!');
+                          this.props.navigator.push({screen: 'MainMenu', passProps: {name: this.props.name, role: this.props.role} });
+
+                          newSurvey = {};
+                        }
+
+        
+        
+      })
+    //return "Failure!";
+    }
+
+
   _submitSurvey = () => {
-        alert("Survey Submitted!")
-        this.props.navigator.pop()
+        this.answerSurvey()
     };
 render() {
   const titleConfig = {
     title: 'Submit Survey',
     color: "black",
   }
+
+  //console.log(this.props.event.host);
   return (
     <View style={{ flex: 1, }}>
       <NavigationBar
@@ -36,7 +71,7 @@ render() {
       />
       <ScrollView style={styles.container}>
         <View style={{ paddingBottom: 5, }}>
-          <Text style={styles.eventNameText}>Event Name</Text>
+          <Text style={styles.eventNameText}>Event: {this.props.event.name}</Text>
         </View>
         <View style={{ paddingBottom: 5, }}>
           <Text>Survey: </Text>
@@ -48,6 +83,7 @@ render() {
           numberOfLines={5}
           editable={true}
           autoFocus={true}
+          onChangeText={(text) => newSurvey.description = text}
         />
         <TouchableOpacity 
           style={styles.submitButton}
