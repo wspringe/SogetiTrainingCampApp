@@ -59,8 +59,7 @@ export default class ActivitiesHub extends Component {
         role = this.props.profile.roles;
       }
 
-      //Hardcode role since auth is broken.
-      this.props.profile.roles = "admin";
+
     }
 
     
@@ -154,7 +153,7 @@ export default class ActivitiesHub extends Component {
       backgroundColor: 'orange',
     };
 
-    if(this.props.role != "admin") {
+    if(this.props.role == "admin") {
       rightButtonConfig = {
         title: 'Add',
         handler: () => this.props.navigator.push({ screen: 'AddActivity'})

@@ -44,7 +44,7 @@ export default class EventDetails extends Component {
             color: "black"
         }
 
-        if (this.props.role != "admin") {
+        if (this.props.role == "admin") {
             rightButtonConfig = {
                 title: "Edit",
                 color: "white",

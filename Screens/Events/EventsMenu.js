@@ -128,8 +128,7 @@ export default class MainMenu extends Component {
         role = this.props.profile.roles;
       }
 
-      //Hardcode role since auth is broken.
-      this.props.profile.roles = "admin";
+
     }
 
     
@@ -235,7 +234,7 @@ export default class MainMenu extends Component {
       var role = this.props.role
     }
 
-    if (role != "admin") {		
+    if (role == "admin") {		
      rightButtonConfig = {
        title: 'Add',
        handler: () => this.props.navigator.push({ screen: 'AddEvent'})
